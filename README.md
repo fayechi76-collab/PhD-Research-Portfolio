@@ -2,9 +2,9 @@
 
 **Live page:** https://fayechi76-collab.github.io/PhD-Research-Portfolio/ (interactive Mechanism Evidence Atlas with live filters)
 
-Physician, Dr. med. univ. (MBBS 1999; recognised by the Medical University of Vienna, 2026). I built a machine-assisted pipeline that turns a very large biomedical literature into a structured, auditable map of mechanisms, study designs and evidence gaps, and I read the results critically as a clinician.
+Physician, Dr. med. univ. (MBBS 1999; recognised by the Medical University of Vienna, 2026). I built an AI-assisted workflow to organise neuropsychiatric literature by proposed mechanism and study design. The portfolio shows where research is concentrated and helps identify questions for closer review.
 
-> **Partial showcase.** The full version is currently private and available from the author on request.
+> **Public research showcase.** Contact me to discuss the project.
 
 ## At a glance (updated 21 Nov 2026)
 
@@ -15,19 +15,15 @@ Physician, Dr. med. univ. (MBBS 1999; recognised by the Medical University of Vi
 | Coverage | 46,654 records linked to ≥1 fine-grained entity |
 | Interactive atlas | [atlas/](atlas/index.html): network and mechanism × method heatmap, filterable by disorder, method and year |
 | Literature catalog explorer | [catalog/](catalog/index.html): 19 × 7 mechanism × method matrix, coverage and journal sources (incl. the Lancet family), with disorder, design, year and journal filters |
-| Curated pilot map | [pilot/](pilot/index.html): 141 hand-curated records, classification views |
+| Exploratory Literature Map | [pilot/](pilot/index.html): explore records by mechanism and study method |
 | Literature census | [census/](census/index.html): search funnel and per-disorder counts, 31 Oct 2006 – 31 Oct 2026 |
 | Relation signals | 1,084 mechanism pairs; edge = papers mentioning both mechanisms (co-occurrence, not causation) |
 | Quality control | 14 data-integrity checks · 54 automated interface-logic tests |
-| Human verification | 12 claims from 7 papers checked against abstracts; full-text verification pending |
-
-## Why it matters for my PhD
-
-I turn clinical questions into structured, quantitative evidence. For **prospective cohort research on outcomes after venous thromboembolism** (my first priority), I would use the pipeline to map the post-VTE outcome literature (recurrence, bleeding, post-thrombotic syndrome, persistent symptoms after PE, quality of life, biomarkers) and rank candidate predictors by study design to help focus a thesis question. Clinical epidemiology, time-to-event analysis, R and prediction modelling are my training goals. I would also apply the approach to the **brain–liver axis**. These are proposals; no VTE or hepatology corpus has been built yet.
+| AI-assisted abstract review | 12 claims from 7 papers reviewed against abstracts. Human review and full-text verification remain pending. |
 
 ## Roles and limitations
 
-I set the questions, scope, classification framework and interpretation rules. AI tools (ChatGPT and Codex, plus Claude and Gemini for supplementary checks) did the large-scale parsing, labelling, relation extraction and tool building. Critical appraisal of study designs and causal claims is the next stage. The work is self-directed and unfunded, with no peer-reviewed publication yet. The full record database, labels dataset and code are not released. Only aggregated, category-level counts appear here.
+I set the questions, scope, classification framework and interpretation rules. AI tools (ChatGPT and Codex, plus Claude and Gemini for supplementary checks) did the large-scale parsing, labelling, relation extraction and tool building. Critical appraisal of study designs and causal claims is the next stage. The work is self-directed and unfunded, with no peer-reviewed publication yet. The public site includes summary counts and de-identified record-level classification fields used by the filters. The public catalog data omit article titles and DOI identifiers.
 
 More: [Overview](research/overview.md) · [Methods](research/methods.md) · [Evidence & causality](research/evidence.md) · [Outputs](research/outputs.md)
 
