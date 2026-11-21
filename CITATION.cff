@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "If you refer to this portfolio, please cite it as below."
+title: "AI-assisted evidence synthesis: a mechanism map of 104,212 neuropsychiatric research records (research portfolio)"
+type: dataset
+authors:
+  - family-names: Chi
+    given-names: Yawen
+    email: fayechi76@gmail.com
+date-released: 2026-11-21
+license: CC-BY-4.0
+url: "https://fayechi76-collab.github.io/PhD-Research-Portfolio/"
+repository-code: "https://github.com/fayechi76-collab/PhD-Research-Portfolio"

@@ -1,0 +1,24 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Literature census · Yawen Chi</title>
+<style>
+body{margin:0;background:#FCFBF8;color:#333C39;font:15px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif}
+.w{max-width:1200px;margin:auto;padding:28px 32px}.eb{font-size:12px;letter-spacing:.13em;color:#6F7873}h1{font-size:30px;font-weight:550;margin:10px 0 6px}.lead{color:#6F7873;margin:0 0 22px}
+.funnel{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:26px}.f{background:#fff;border:1px solid #DCDDD5;border-radius:12px;padding:16px}.f b{display:block;font-size:28px;color:#0f766e;font-weight:600}.f span{font-size:13px;color:#6F7873}
+.f .bar{height:6px;background:#0f766e;border-radius:3px;margin-top:10px;opacity:.8}
+.ctl{display:flex;gap:16px;flex-wrap:wrap;align-items:center;margin:8px 0 14px;font-size:14px;color:#6F7873}select,input{font:inherit;padding:7px 9px;border:1px solid #DCDDD5;border-radius:6px;background:#FFFDF9}
+.row{display:grid;grid-template-columns:330px 1fr 80px;gap:10px;align-items:center;margin:5px 0;font-size:14px}.row .b{height:16px;background:#0f766e;border-radius:4px;opacity:.85;transition:width .3s}.row span:last-child{text-align:right;color:#6F7873;font-variant-numeric:tabular-nums}
+.note{font-size:13px;color:#6F7873;margin-top:18px}
+@media(max-width:800px){.funnel{grid-template-columns:1fr 1fr}.row{grid-template-columns:150px 1fr 60px;font-size:12px}}
+</style><body><div class="w">
+<div class="eb">LITERATURE CENSUS · 31 OCT 2006 – 31 OCT 2026</div><h1>How large is the literature?</h1><p class="lead">From database search to a 104,212-record catalog. Bars show records per disorder facet; facets overlap and cannot be summed.</p>
+<div class="funnel" id="funnel"></div>
+<div class="ctl"><label>Sort <select id="sort"><option value="n">by number of records</option><option value="a">alphabetically</option></select></label><label>Show <select id="top"><option value="99">all 21 disorder groups</option><option value="10">top 10</option><option value="5">top 5</option></select></label><label><input id="q" type="search" placeholder="Filter disorders…"></label></div>
+<div id="bars"></div>
+<p class="note">Search hits and keyword facets, not screened inclusions. 92,790 pre-selected candidates gave 92,786 unique DOIs after normalisation; 11,426 records from added journals bring the catalog to 104,212.</p></div>
+<script>
+const F=[[624881,'DOI candidates across all journals, 31 Oct 2006 – 31 Oct 2026 (before screening)'],[92790,'Pre-selected leading journals with mechanism or clinical terms'],[11426,'Added from the Lancet family (2,033) and 10 further journals (9,393)'],[104212,'Unique DOI records in the catalog']];
+const D=[['Neurodevelopmental disorders',17272],['Schizophrenia spectrum and other psychotic disorders',23770],['Bipolar and related disorders',10306],['Depressive disorders',15945],['Anxiety disorders',4526],['Obsessive-compulsive and related disorders',3082],['Trauma- and stressor-related disorders',10973],['Dissociative disorders',233],['Somatic symptom and related disorders',210],['Feeding and eating disorders',2877],['Elimination disorders',82],['Sleep–wake disorders',1437],['Disruptive, impulse-control and conduct disorders',998],['Substance-related disorders',8931],['Behavioural addictions',519],['Personality disorders',2538],['Neurocognitive disorders',14069],['Tic and other developmental motor disorders',458],['Sexual dysfunctions and paraphilic disorders',9],['Catatonia',212],['Transdiagnostic / unspecified mental disorders',6656]];
+const fmt=n=>n.toLocaleString('en-US');
+document.getElementById('funnel').innerHTML=F.map(([n,l])=>'<div class="f"><b>'+fmt(n)+'</b><span>'+l+'</span><div class="bar" style="width:'+Math.max(4,100*n/F[0][0]).toFixed(1)+'%"></div></div>').join('');
+function draw(){const s=sort.value,t=+topSel.value,q=document.getElementById('q').value.toLowerCase();let r=D.filter(d=>d[0].toLowerCase().includes(q));r.sort(s==='n'?(a,b)=>b[1]-a[1]:(a,b)=>a[0].localeCompare(b[0]));if(s==='n')r=r.slice(0,t);else r=r.slice(0,t);const m=Math.max(...D.map(d=>d[1]));bars.innerHTML=r.map(([l,n])=>'<div class="row"><span>'+l+'</span><div><div class="b" style="width:'+(100*n/m).toFixed(1)+'%"></div></div><span>'+fmt(n)+'</span></div>').join('');}
+const sort=document.getElementById('sort'),topSel=document.getElementById('top'),bars=document.getElementById('bars');[sort,topSel].forEach(e=>e.onchange=draw);document.getElementById('q').oninput=draw;draw();
+</script></body></html>

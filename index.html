@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Yawen Chi · Physician · Quantitative evidence &amp; clinical research portfolio</title>
+<meta name="description" content="Physician-researcher portfolio: a machine-assisted map of 104,212 neuropsychiatric research records, and how these data skills prepare for clinical cohort research on venous thromboembolism outcomes and the brain–liver axis.">
+<link rel="stylesheet" href="assets/style.css?v=20261121c">
+</head>
+<body>
+<header class="nav">
+  <div class="wrap navin">
+    <a class="brand" href="#top">Yawen Chi</a>
+    <nav><a href="#atlas">Tools</a><a href="#phd">PhD fit</a><a href="atlas/index.html#en" target="_blank" rel="noopener">Full screen ↗</a></nav>
+  </div>
+</header>
+
+<main id="top">
+<div class="partial"><div class="wrap"><strong>Partial showcase.</strong> The full version is currently private and available from the author on request (<a href="mailto:fayechi76@gmail.com">fayechi76@gmail.com</a>).</div></div>
+
+<section class="hero">
+  <div class="wrap">
+    <p class="eyebrow">Physician, Dr. med. univ. (MBBS 1999; recognised by the Medical University of Vienna, 2026) · Independent research portfolio</p>
+    <h1>A physician who turns clinical questions into <span class="hl">structured, quantitative evidence</span>.</h1>
+    <p class="lead">I built a reproducible, AI-assisted pipeline that cleaned, structured and classified <strong>104,212 research records</strong> by study design and mechanism, graded the evidence and summarised it quantitatively. I also documented its quality checks and limitations. I see this as preparation for what I want to do next: <strong>prospective clinical cohort research on outcomes after venous thromboembolism</strong>, from patient recruitment and follow-up to longitudinal analysis and biomarkers.</p>
+    <p class="langs">Certified payroll accountant in Austria (2021–2026): payroll data for up to ~350 employees, handled in German · BSc Business Administration, JKU Linz (in progress) · German C1 · Python (NumPy, pandas); learning R and statistics · <em>Full CV in my application</em></p>
+    <div class="cta">
+      <a class="btn primary" href="#atlas">Open the interactive tools</a>
+      <a class="btn" href="#phd">Fit with VTE outcomes research</a>
+    </div>
+  </div>
+</section>
+
+<section id="atlas" class="band atlas">
+  <div class="wrap">
+    <h2>Interactive research outputs <span class="pill">live</span></h2>
+    <p class="sub">Four working tools built on 104,212 research records (31 Oct 2006 – 31 Oct 2026). Use the filters; everything updates live. <strong>Edge = papers mentioning both mechanisms (co-occurrence, not causation).</strong></p>
+    <div class="tabs4" role="tablist">
+      <button class="on" data-src="atlas/index.html#en"><b>Mechanism Evidence Atlas</b><span>48 mechanisms, 1,084 co-occurrence edges, heatmap</span></button>
+      <button data-src="catalog/index.html#en"><b>Literature catalog explorer</b><span>Matrix · coverage · journal sources (120 titles incl. the Lancet family)</span></button>
+      <button data-src="pilot/index.html"><b>Curated pilot map</b><span>141 hand-curated records, classification views</span></button>
+      <button data-src="census/index.html"><b>Literature census</b><span>624,881 search hits → 104,212 records, by disorder</span></button>
+    </div>
+  </div>
+  <div class="frame"><iframe id="viewer" src="atlas/index.html#en" title="Interactive research output" loading="eager"></iframe></div>
+  <div class="wrap"><p class="fine"><a id="fs" href="atlas/index.html#en" target="_blank" rel="noopener">Open this tool full screen ↗</a></p></div>
+</section>
+<script>(function(){var v=document.getElementById('viewer');
+document.querySelectorAll('.tabs4 button').forEach(function(b){b.onclick=function(){document.querySelectorAll('.tabs4 button').forEach(function(x){x.classList.toggle('on',x===b)});v.style.height='';v.src=b.dataset.src;document.getElementById('fs').href=b.dataset.src;};});
+window.addEventListener('message',function(e){if(e.source!==v.contentWindow||!e.data||typeof e.data.toolHeight!=='number')return;if(v.getAttribute('src').indexOf('catalog/')!==0)return;var h=Math.max(480,Math.min(12000,e.data.toolHeight));v.style.height=h+'px';});})();</script>
+
+<section id="phd">
+  <div class="wrap">
+    <h2>Fit with my PhD goals</h2>
+    <p class="sub">Both projects match my research interests in vascular biology and metabolic regulation. Below is how I would apply the same approach; these are proposals and training goals, not results I already have.</p>
+    <div class="cards">
+      <article class="card first">
+        <p class="kicker">First choice · VTE outcomes (prospective cohort &amp; biobank)</p>
+        <h3>Why do patients differ after DVT or pulmonary embolism?</h3>
+        <ul>
+          <li><b>Rapid literature map:</b> use the pipeline to map published work on post-VTE outcomes (recurrence, bleeding on anticoagulation, post-thrombotic syndrome, persistent dyspnoea and functional limitation after PE, psychological burden and quality of life), together with candidate biomarkers such as D-dimer.</li>
+          <li><b>Prioritise predictors:</b> grade each patient-, event- and treatment-related factor by study design (prospective cohort, trial, registry, case–control) and how consistently it is reported. The result is an evidence-ranked shortlist of candidate predictors.</li>
+          <li><b>Focus the thesis question:</b> use that map, together with what I see in the outpatient clinic, to select a question that the cohort data and biobank can actually answer.</li>
+          <li><b>Clinical role:</b> as a physician I want to recruit and follow patients myself and take part in structured assessments and outcome adjudication.</li>
+          <li><b>Language:</b> C1-certified German, which is the working language of my current degree and of my professional work in Austria. This is sufficient for informed consent and patient interviews.</li>
+          <li><b>Currently building:</b> building on Python (NumPy, pandas) and basic SQL from JKU coursework, I am learning R and taking a statistics course at JKU this semester (exam results due February 2027).</li>
+          <li><b>PhD training goals:</b> clinical epidemiology, longitudinal and time-to-event analysis, advanced biostatistics in R, prediction modelling with external validation, and biobank-based biomarker research.</li>
+        </ul>
+      </article>
+      <article class="card">
+        <p class="kicker">Brain–liver axis</p>
+        <h3>Central and autonomic control of liver metabolism</h3>
+        <ul>
+          <li>My map already covers the relevant categories: brain energy and glucose metabolism (489 papers), mitochondrial function (792), gut microbiome (650) and the gut–brain axis domain (700). It has no dedicated hepatic or autonomic-nerve entity yet.</li>
+          <li>The same pipeline could map human versus animal evidence on central (e.g. melanocortin/MC4R) and autonomic regulation of hepatic lipid metabolism, keeping experimental-model findings separate from human data.</li>
+          <li>Training goals: human metabolic intervention studies, GCP and trial conduct, in vivo metabolic phenotyping, and metabolic data analysis.</li>
+        </ul>
+      </article>
+    </div>
+    <p class="fine">Category counts come from the neuropsychiatric corpus described above. No VTE or hepatology corpus has been built yet.</p>
+  </div>
+</section>
+
+<footer class="foot"><div class="wrap">Yawen Chi · <a href="mailto:fayechi76@gmail.com">fayechi76@gmail.com</a></div></footer>
+</main>
+</body>
+</html>

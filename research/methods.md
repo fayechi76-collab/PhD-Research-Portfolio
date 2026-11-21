@@ -13,7 +13,7 @@
 
 ## Current verification boundary
 
-Approximately 93,000 records have been described as the screening corpus, but the exact count, retrieval source, date, search query, and completed screening stages have **not been independently checked for this public portfolio**. This number must not be read as the number of full-text studies analysed.
+The current mechanism-network build (updated 21 Nov 2026) contains **104,212 unique DOI records** (first published 31 Oct 2006 – 31 Oct 2026; 103,291 with abstracts), including a supplement of 2,033 Lancet-family records and 9,393 records from 10 further journals. Source databases, search strings and retrieval dates are still being documented for public release. This number must not be read as the number of full-text studies analysed.
 
 No classification accuracy or inter-rater agreement figure is reported because no verified estimate is available.
 

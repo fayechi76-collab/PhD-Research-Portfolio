@@ -1,0 +1,1052 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; script-src 'unsafe-inline'; img-src data:; connect-src 'none'; base-uri 'none'; form-action 'none'">
+<title>Research mechanisms and study methods · Local evidence map</title>
+<style>
+:root{--ivory:#FCFBF8;--ink:#333C39;--muted:#6F7873;--sage:#9AAE9F;--blue:#A6B7C2;--lavender:#B6ABC0;--line:#DCDDD5;--soft:#F1F0E9;--warn:#8A6658}
+*{box-sizing:border-box}body{margin:0;background:var(--ivory);color:var(--ink);font:15px/1.65 -apple-system,BlinkMacSystemFont,"PingFang SC","Helvetica Neue",Arial,sans-serif}button,input,select{font:inherit}button{cursor:pointer;color:inherit}button:focus-visible,input:focus-visible,select:focus-visible,summary:focus-visible{outline:3px solid #6C8C85;outline-offset:3px}a{color:#476E80;text-underline-offset:3px}header,main,footer{max-width:1390px;margin:auto;padding:0 38px}.topline{display:flex;justify-content:space-between;align-items:center;padding:32px 0 12px;font-size:12px;letter-spacing:.12em;color:var(--muted)}.local{border:1px solid var(--line);border-radius:4px;padding:3px 10px;letter-spacing:.04em}h1{font-size:32px;font-weight:600;letter-spacing:.02em;line-height:1.3;margin:8px 0 16px}h2{font-size:23px;font-weight:550;margin:0 0 12px}h3{font-size:18px;line-height:1.6;margin:8px 0 12px;font-weight:550}p{margin:8px 0 14px}.lead{max-width:950px;color:var(--muted)}.stats{display:flex;gap:42px;margin:26px 0 24px}.stats span{font-size:13px;color:var(--muted)}.stats b{font-weight:500;font-size:28px;color:var(--ink);margin-right:8px}.nav{display:flex;gap:28px;border-bottom:1px solid var(--line);margin-bottom:24px}.nav button{border:0;background:none;padding:10px 0 12px;color:var(--muted);position:relative}.nav button.active{color:var(--ink);font-weight:600}.nav button.active:after{content:"";position:absolute;height:3px;bottom:-1px;left:0;right:0;background:#8BA497}.toolbar{display:grid;grid-template-columns:minmax(260px,1fr) 180px 180px;gap:14px;margin:0 0 18px}.toolbar label{display:block;color:var(--muted);font-size:12px}.toolbar input,.toolbar select,.select-row select{width:100%;border:1px solid var(--line);border-radius:5px;background:#FFFDF9;padding:10px 12px;color:var(--ink);height:46px}.view{margin-top:24px}.view[hidden],article[hidden],[hidden]{display:none!important}.section-heading{display:flex;justify-content:space-between;gap:24px;align-items:center;margin-bottom:8px}.quiet-button{border:1px solid var(--line);border-radius:5px;background:transparent;padding:8px 14px;white-space:nowrap}.mode-strip{display:flex;gap:0;flex-wrap:wrap;margin:18px 0 12px;border:1px solid var(--line);border-radius:6px;width:fit-content;overflow:hidden}.mode-strip button{background:transparent;border:0;border-right:1px solid var(--line);padding:8px 17px;font-size:13px}.mode-strip button:last-child{border:0}.mode-strip button.active{background:#DDE5DD}.scope-note{font-size:13px;color:var(--muted);max-width:1100px;min-height:44px}.matrix-wrap{margin-top:18px;overflow:auto;border:1px solid var(--line);border-radius:6px}.matrix{border-collapse:separate;border-spacing:0;width:100%;table-layout:fixed;font-size:13px}.matrix thead th{background:#EBEEE8;border-bottom:1px solid var(--line);height:60px;position:sticky;top:0;z-index:1}.matrix th:first-child{width:34%;text-align:left}.matrix tbody th{background:var(--ivory);font-weight:450;border-bottom:1px solid #ECECE5}.matrix td{padding:4px;border-left:1px solid #F8F7F2;border-bottom:1px solid #ECECE5;vertical-align:middle}.matrix th button{display:block;border:0;background:none;width:100%;text-align:inherit;padding:9px 15px;line-height:1.45;font-size:13px}.matrix th button:hover{text-decoration:underline;text-underline-offset:4px}.matrix .method-head{text-align:center;padding:8px 3px}.cell{display:block;width:100%;height:31px;border:0;border-radius:3px;font-variant-numeric:tabular-nums;font-size:14px;transition:box-shadow .15s}.cell:hover{box-shadow:inset 0 0 0 2px #738D83}.legend{display:flex;align-items:center;gap:12px;font-size:12px;color:var(--muted);margin:14px 0 8px;flex-wrap:wrap}.swatch{width:27px;height:12px;border-radius:2px;display:inline-block;vertical-align:middle;margin-right:5px}.note-box{border-left:3px solid #AABAB0;background:#F1F3EE;padding:14px 18px;margin:22px 0;color:#535E57;font-size:13px}.note-box p{margin:0 0 6px}.note-box p:last-child{margin:0}.select-row{display:flex;align-items:center;gap:18px;margin:14px 0 20px}.select-row select{max-width:620px}.detail-controls{display:flex;gap:16px;align-items:center;margin:12px 0 22px;color:var(--muted);font-size:13px}.paper{padding:25px 0;border-top:1px solid var(--line)}.paper-top{display:flex;align-items:center;gap:14px;font-size:12px;flex-wrap:wrap}.status{color:#48665A;background:#E7EEE6;border-radius:3px;padding:3px 8px}.status.pending{background:#EEE6DF;color:#795E4E}.muted{color:var(--muted)}.doi{font-size:13px;color:var(--muted);word-break:break-all}dl{display:grid;grid-template-columns:190px 1fr;gap:10px 25px;margin:22px 0}dt{font-size:13px;color:var(--muted)}dd{margin:0}details{background:#F4F3ED;border-radius:5px;padding:12px 16px;margin-top:20px}summary{cursor:pointer;font-size:13px;font-weight:550}.evidence-scroll{overflow:auto;margin-top:15px}.evidence{width:100%;min-width:850px;border-collapse:collapse;font-size:13px}.evidence th{text-align:left;color:#626F67;font-weight:550;border-bottom:1px solid var(--line);padding:8px}.evidence td{vertical-align:top;padding:12px 8px;border-bottom:1px solid #E3E3DA}.evidence th:nth-child(1){width:6%}.evidence th:nth-child(2){width:20%}.evidence th:nth-child(3){width:35%}.evidence th:nth-child(4){width:21%}.caution{font-size:12px;color:var(--warn);margin-top:15px}.result-count{font-size:13px;color:var(--muted)}.empty{padding:45px 0;color:var(--muted)}.distribution{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px 34px;margin:20px 0 28px}.distribution button{display:grid;grid-template-columns:1fr 34px;gap:14px;align-items:center;text-align:left;background:none;border:0;border-bottom:1px solid #E4E5DC;padding:8px 0;font-size:13px}.distribution b{font-weight:500;text-align:right;padding:3px 0;background:#E1E8E1;border-radius:3px}.questions{display:grid;grid-template-columns:1fr 1fr;gap:22px 36px;margin-top:24px}.question{padding:20px 0;border-top:3px solid var(--sage)}.question:nth-child(2){border-color:var(--blue)}.question:nth-child(3){border-color:var(--lavender)}.question:nth-child(4){border-color:#C4B4A0}.question .eyebrow{font-size:12px;color:var(--muted);letter-spacing:.05em}.question p{font-size:14px}.dispute{padding:16px 0;border-top:1px solid var(--line)}.coverage-list{columns:2;column-gap:40px;padding-left:20px;font-size:13px}.coverage-list li{margin-bottom:8px;break-inside:avoid}.method-definition{padding:14px 0;border-top:1px solid var(--line)}.method-definition p{font-size:13px}.method-definition h3{font-size:16px}.definitions summary{font-weight:500}footer{margin-top:36px;padding-top:20px;padding-bottom:40px;border-top:1px solid var(--line);font-size:12px;color:var(--muted)}.back{border:0;background:none;text-decoration:underline;padding:0;color:#577367;font-size:13px}
+@media(max-width:850px){header,main,footer{padding-left:20px;padding-right:20px}h1{font-size:26px}.toolbar{grid-template-columns:1fr 1fr}.toolbar label:first-child{grid-column:1/-1}.stats{gap:18px;flex-wrap:wrap}.stats b{font-size:24px}.nav{gap:20px}.matrix{min-width:900px}.questions,.distribution{grid-template-columns:1fr}dl{grid-template-columns:1fr;gap:5px}dd{margin-bottom:10px}.coverage-list{columns:1}.section-heading{align-items:flex-start;flex-direction:column}}
+@media print{header,main,footer{max-width:none;padding:0}.toolbar,.nav,.quiet-button,.detail-controls,.mode-strip,footer{display:none}.view:not(#overview){display:none!important}#overview{display:block!important}.matrix-wrap{overflow:visible}.matrix{font-size:9px;min-width:0}.matrix th:first-child{width:33%}.matrix th button,.matrix .method-head{font-size:8px;padding:3px}.matrix .cell{font-size:10px;height:20px}.matrix th{height:30px}.matrix td{padding:2px}h1{font-size:20px}.stats{margin:10px 0}.scope-note{font-size:10px}.topline{padding-top:0}.note-box{font-size:10px;padding:8px;break-inside:avoid}@page{size:A4 landscape;margin:12mm}}
+</style></head><body>
+<header><div class="topline"><span>NEUROPSYCHIATRY · Research literature review</span><span class="local">Curated pilot · 141 records</span></div>
+<h1>Research mechanisms and study methods<br>Interactive evidence map</h1><p class="lead">Uses the 19 peer domains of the final research map, with study methods on an independent axis. Click a heatmap count to see the records in that cell, labelled by mechanism and method.</p>
+<div class="stats"><div><b>141</b><span>Library records</span></div><div><b>19</b><span>Mechanism domains</span></div><div><b>7</b><span>Method reading groups</span></div><div><b>88</b><span>Records with a direct mechanism basis</span></div></div>
+<nav class="nav" aria-label="Reading views"><button class="active" data-page="overview">Overview</button><button data-page="mechanism">Mechanism details</button><button data-page="method">Research methods</button></nav>
+</header><main>
+<div class="toolbar"><label>Search mechanisms or methods<input id="search" type="search" placeholder="For example: microglia, sleep, ketamine" aria-label="Search papers"></label>
+<label>Record type<select id="type-filter"><option value="all">All 141 records</option><option value="article">139 journal records only</option><option value="other">Book and registry records</option></select></label>
+<label>Classification status<select id="status-filter"><option value="all">All classification statuses</option><option value="keyword">Includes keyword-only items needing review</option><option value="direct">Direct basis for mechanism and method</option><option value="archive">Historical / methods archive</option></select></label></div>
+<p class="result-count" id="global-count" aria-live="polite"></p>
+<section class="view" id="overview"><div class="section-heading"><div><h2>Mechanism × study method</h2><p class="muted">Each cell shows only the deduplicated record count. Thematic relevance and the strength of causal evidence are distinct.</p></div><button id="all-papers" class="quiet-button">View all 141 records</button></div>
+<div class="mode-strip" role="group" aria-label="Matrix counting scope"><button class="active" data-mode="direct">Direct basis</button><button data-mode="legacy">Original workbook scope (includes review items)</button><button data-mode="all">All candidates (includes review items)</button></div>
+<p class="scope-note" id="mode-note"></p><div class="matrix-wrap"><table class="matrix" aria-label="Record counts across 19 mechanisms and 7 method groups"><thead><tr><th scope="col">Research mechanism domain</th><th scope="col"><button class="method-head" data-group="1" title="Systematic, narrative, scoping and methodological reviews, and all types of meta-analysis.">Evidence synthesis</button></th><th scope="col"><button class="method-head" data-group="2" title="Randomized controlled and crossover designs remain distinct. Crossover design alone does not guarantee random allocation.">Randomized / crossover</button></th><th scope="col"><button class="method-head" data-group="3" title="Human interventions with unconfirmed randomization, single cases and case series are kept separate from randomized trials.">Other human studies</button></th><th scope="col"><button class="method-head" data-group="4" title="Cohort, cross-sectional, case-control, registry, genetic association and secondary-data studies. These cannot be directly interpreted as causal evidence.">Observational / genetic</button></th><th scope="col"><button class="method-head" data-group="5" title="Studies that actually perform genetic instrumental-variable inference. Tutorials are excluded; causal interpretation depends on instrumental-variable assumptions.">Mendelian randomization</button></th><th scope="col"><button class="method-head" data-group="6" title="Animal interventions, cell cultures, ex vivo and postmortem tissue, and microbiota transfer. Species and experimental levels remain distinct.">Model / tissue studies</button></th><th scope="col"><button class="method-head" data-group="7" title="Method validation, computational and statistical analyses, guidelines, consensus, theoretical frameworks and protocols. Includes non-original research material and must not be treated as efficacy trials.">Methods / guidance</button></th></tr></thead><tbody><tr><th scope="row"><button class="mechanism-head" data-mechanism="1">Genetics, epigenetics and gene-environment interaction</button></th><td><button class="cell" data-mechanism="1" data-group="1" aria-label="Genetics, epigenetics and gene-environment interaction, Evidence synthesis">1</button></td><td><button class="cell" data-mechanism="1" data-group="2" aria-label="Genetics, epigenetics and gene-environment interaction, Randomized / crossover">0</button></td><td><button class="cell" data-mechanism="1" data-group="3" aria-label="Genetics, epigenetics and gene-environment interaction, Other human studies">0</button></td><td><button class="cell" data-mechanism="1" data-group="4" aria-label="Genetics, epigenetics and gene-environment interaction, Observational / genetic">4</button></td><td><button class="cell" data-mechanism="1" data-group="5" aria-label="Genetics, epigenetics and gene-environment interaction, Mendelian randomization">0</button></td><td><button class="cell" data-mechanism="1" data-group="6" aria-label="Genetics, epigenetics and gene-environment interaction, Model / tissue studies">0</button></td><td><button class="cell" data-mechanism="1" data-group="7" aria-label="Genetics, epigenetics and gene-environment interaction, Methods / guidance">1</button></td></tr><tr><th scope="row"><button class="mechanism-head" data-mechanism="2">Neurodevelopment, critical periods and synaptic pruning</button></th><td><button class="cell" data-mechanism="2" data-group="1" aria-label="Neurodevelopment, critical periods and synaptic pruning, Evidence synthesis">1</button></td><td><button class="cell" data-mechanism="2" data-group="2" aria-label="Neurodevelopment, critical periods and synaptic pruning, Randomized / crossover">0</button></td><td><button class="cell" data-mechanism="2" data-group="3" aria-label="Neurodevelopment, critical periods and synaptic pruning, Other human studies">0</button></td><td><button class="cell" data-mechanism="2" data-group="4" aria-label="Neurodevelopment, critical periods and synaptic pruning, Observational / genetic">2</button></td><td><button class="cell" data-mechanism="2" data-group="5" aria-label="Neurodevelopment, critical periods and synaptic pruning, Mendelian randomization">0</button></td><td><button class="cell" data-mechanism="2" data-group="6" aria-label="Neurodevelopment, critical periods and synaptic pruning, Model / tissue studies">2</button></td><td><button class="cell" data-mechanism="2" data-group="7" aria-label="Neurodevelopment, critical periods and synaptic pruning, Methods / guidance">0</button></td></tr><tr><th scope="row"><button class="mechanism-head" data-mechanism="3">Environment, stress, nutrition and social conditions</button></th><td><button class="cell" data-mechanism="3" data-group="1" aria-label="Environment, stress, nutrition and social conditions, Evidence synthesis">3</button></td><td><button class="cell" data-mechanism="3" data-group="2" aria-label="Environment, stress, nutrition and social conditions, Randomized / crossover">0</button></td><td><button class="cell" data-mechanism="3" data-group="3" aria-label="Environment, stress, nutrition and social conditions, Other human studies">0</button></td><td><button class="cell" data-mechanism="3" data-group="4" aria-label="Environment, stress, nutrition and social conditions, Observational / genetic">0</button></td><td><button class="cell" data-mechanism="3" data-group="5" aria-label="Environment, stress, nutrition and social conditions, Mendelian randomization">0</button></td><td><button class="cell" data-mechanism="3" data-group="6" aria-label="Environment, stress, nutrition and social conditions, Model / tissue studies">1</button></td><td><button class="cell" data-mechanism="3" data-group="7" aria-label="Environment, stress, nutrition and social conditions, Methods / guidance">0</button></td></tr><tr><th scope="row"><button class="mechanism-head" data-mechanism="4">Sleep and circadian regulation</button></th><td><button class="cell" data-mechanism="4" data-group="1" aria-label="Sleep and circadian regulation, Evidence synthesis">2</button></td><td><button class="cell" data-mechanism="4" data-group="2" aria-label="Sleep and circadian regulation, Randomized / crossover">1</button></td><td><button class="cell" data-mechanism="4" data-group="3" aria-label="Sleep and circadian regulation, Other human studies">0</button></td><td><button class="cell" data-mechanism="4" data-group="4" aria-label="Sleep and circadian regulation, Observational / genetic">1</button></td><td><button class="cell" data-mechanism="4" data-group="5" aria-label="Sleep and circadian regulation, Mendelian randomization">0</button></td><td><button class="cell" data-mechanism="4" data-group="6" aria-label="Sleep and circadian regulation, Model / tissue studies">0</button></td><td><button class="cell" data-mechanism="4" data-group="7" aria-label="Sleep and circadian regulation, Methods / guidance">2</button></td></tr><tr><th scope="row"><button class="mechanism-head" data-mechanism="5">Hypothalamic-pituitary-adrenal axis, receptor sensitivity and feedback</button></th><td><button class="cell" data-mechanism="5" data-group="1" aria-label="Hypothalamic-pituitary-adrenal axis, receptor sensitivity and feedback, Evidence synthesis">5</button></td><td><button class="cell" data-mechanism="5" data-group="2" aria-label="Hypothalamic-pituitary-adrenal axis, receptor sensitivity and feedback, Randomized / crossover">0</button></td><td><button class="cell" data-mechanism="5" data-group="3" aria-label="Hypothalamic-pituitary-adrenal axis, receptor sensitivity and feedback, Other human studies">0</button></td><td><button class="cell" data-mechanism="5" data-group="4" aria-label="Hypothalamic-pituitary-adrenal axis, receptor sensitivity and feedback, Observational / genetic">1</button></td><td><button class="cell" data-mechanism="5" data-group="5" aria-label="Hypothalamic-pituitary-adrenal axis, receptor sensitivity and feedback, Mendelian randomization">0</button></td><td><button class="cell" data-mechanism="5" data-group="6" aria-label="Hypothalamic-pituitary-adrenal axis, receptor sensitivity and feedback, Model / tissue studies">0</button></td><td><button class="cell" data-mechanism="5" data-group="7" aria-label="Hypothalamic-pituitary-adrenal axis, receptor sensitivity and feedback, Methods / guidance">1</button></td></tr><tr><th scope="row"><button class="mechanism-head" data-mechanism="6">Immunity, microglia, astrocytes and kynurenine</button></th><td><button class="cell" data-mechanism="6" data-group="1" aria-label="Immunity, microglia, astrocytes and kynurenine, Evidence synthesis">4</button></td><td><button class="cell" data-mechanism="6" data-group="2" aria-label="Immunity, microglia, astrocytes and kynurenine, Randomized / crossover">1</button></td><td><button class="cell" data-mechanism="6" data-group="3" aria-label="Immunity, microglia, astrocytes and kynurenine, Other human studies">1</button></td><td><button class="cell" data-mechanism="6" data-group="4" aria-label="Immunity, microglia, astrocytes and kynurenine, Observational / genetic">2</button></td><td><button class="cell" data-mechanism="6" data-group="5" aria-label="Immunity, microglia, astrocytes and kynurenine, Mendelian randomization">0</button></td><td><button class="cell" data-mechanism="6" data-group="6" aria-label="Immunity, microglia, astrocytes and kynurenine, Model / tissue studies">1</button></td><td><button class="cell" data-mechanism="6" data-group="7" aria-label="Immunity, microglia, astrocytes and kynurenine, Methods / guidance">1</button></td></tr><tr><th scope="row"><button class="mechanism-head" data-mechanism="7">Neuronal autoantibodies and autoimmune encephalitis</button></th><td><button class="cell" data-mechanism="7" data-group="1" aria-label="Neuronal autoantibodies and autoimmune encephalitis, Evidence synthesis">0</button></td><td><button class="cell" data-mechanism="7" data-group="2" aria-label="Neuronal autoantibodies and autoimmune encephalitis, Randomized / crossover">0</button></td><td><button class="cell" data-mechanism="7" data-group="3" aria-label="Neuronal autoantibodies and autoimmune encephalitis, Other human studies">0</button></td><td><button class="cell" data-mechanism="7" data-group="4" aria-label="Neuronal autoantibodies and autoimmune encephalitis, Observational / genetic">0</button></td><td><button class="cell" data-mechanism="7" data-group="5" aria-label="Neuronal autoantibodies and autoimmune encephalitis, Mendelian randomization">0</button></td><td><button class="cell" data-mechanism="7" data-group="6" aria-label="Neuronal autoantibodies and autoimmune encephalitis, Model / tissue studies">1</button></td><td><button class="cell" data-mechanism="7" data-group="7" aria-label="Neuronal autoantibodies and autoimmune encephalitis, Methods / guidance">1</button></td></tr><tr><th scope="row"><button class="mechanism-head" data-mechanism="8">Neuroinfections and postinfectious autoimmunity</button></th><td><button class="cell" data-mechanism="8" data-group="1" aria-label="Neuroinfections and postinfectious autoimmunity, Evidence synthesis">0</button></td><td><button class="cell" data-mechanism="8" data-group="2" aria-label="Neuroinfections and postinfectious autoimmunity, Randomized / crossover">0</button></td><td><button class="cell" data-mechanism="8" data-group="3" aria-label="Neuroinfections and postinfectious autoimmunity, Other human studies">0</button></td><td><button class="cell" data-mechanism="8" data-group="4" aria-label="Neuroinfections and postinfectious autoimmunity, Observational / genetic">2</button></td><td><button class="cell" data-mechanism="8" data-group="5" aria-label="Neuroinfections and postinfectious autoimmunity, Mendelian randomization">0</button></td><td><button class="cell" data-mechanism="8" data-group="6" aria-label="Neuroinfections and postinfectious autoimmunity, Model / tissue studies">0</button></td><td><button class="cell" data-mechanism="8" data-group="7" aria-label="Neuroinfections and postinfectious autoimmunity, Methods / guidance">0</button></td></tr><tr><th scope="row"><button class="mechanism-head" data-mechanism="9">Neurotransmitters, receptors and ion channels</button></th><td><button class="cell" data-mechanism="9" data-group="1" aria-label="Neurotransmitters, receptors and ion channels, Evidence synthesis">5</button></td><td><button class="cell" data-mechanism="9" data-group="2" aria-label="Neurotransmitters, receptors and ion channels, Randomized / crossover">1</button></td><td><button class="cell" data-mechanism="9" data-group="3" aria-label="Neurotransmitters, receptors and ion channels, Other human studies">0</button></td><td><button class="cell" data-mechanism="9" data-group="4" aria-label="Neurotransmitters, receptors and ion channels, Observational / genetic">2</button></td><td><button class="cell" data-mechanism="9" data-group="5" aria-label="Neurotransmitters, receptors and ion channels, Mendelian randomization">0</button></td><td><button class="cell" data-mechanism="9" data-group="6" aria-label="Neurotransmitters, receptors and ion channels, Model / tissue studies">0</button></td><td><button class="cell" data-mechanism="9" data-group="7" aria-label="Neurotransmitters, receptors and ion channels, Methods / guidance">1</button></td></tr><tr><th scope="row"><button class="mechanism-head" data-mechanism="10">Synaptic plasticity, networks and EEG</button></th><td><button class="cell" data-mechanism="10" data-group="1" aria-label="Synaptic plasticity, networks and EEG, Evidence synthesis">5</button></td><td><button class="cell" data-mechanism="10" data-group="2" aria-label="Synaptic plasticity, networks and EEG, Randomized / crossover">0</button></td><td><button class="cell" data-mechanism="10" data-group="3" aria-label="Synaptic plasticity, networks and EEG, Other human studies">0</button></td><td><button class="cell" data-mechanism="10" data-group="4" aria-label="Synaptic plasticity, networks and EEG, Observational / genetic">1</button></td><td><button class="cell" data-mechanism="10" data-group="5" aria-label="Synaptic plasticity, networks and EEG, Mendelian randomization">0</button></td><td><button class="cell" data-mechanism="10" data-group="6" aria-label="Synaptic plasticity, networks and EEG, Model / tissue studies">1</button></td><td><button class="cell" data-mechanism="10" data-group="7" aria-label="Synaptic plasticity, networks and EEG, Methods / guidance">0</button></td></tr><tr><th scope="row"><button class="mechanism-head" data-mechanism="11">Energy metabolism, mitochondria and redox</button></th><td><button class="cell" data-mechanism="11" data-group="1" aria-label="Energy metabolism, mitochondria and redox, Evidence synthesis">1</button></td><td><button class="cell" data-mechanism="11" data-group="2" aria-label="Energy metabolism, mitochondria and redox, Randomized / crossover">1</button></td><td><button class="cell" data-mechanism="11" data-group="3" aria-label="Energy metabolism, mitochondria and redox, Other human studies">0</button></td><td><button class="cell" data-mechanism="11" data-group="4" aria-label="Energy metabolism, mitochondria and redox, Observational / genetic">3</button></td><td><button class="cell" data-mechanism="11" data-group="5" aria-label="Energy metabolism, mitochondria and redox, Mendelian randomization">0</button></td><td><button class="cell" data-mechanism="11" data-group="6" aria-label="Energy metabolism, mitochondria and redox, Model / tissue studies">0</button></td><td><button class="cell" data-mechanism="11" data-group="7" aria-label="Energy metabolism, mitochondria and redox, Methods / guidance">1</button></td></tr><tr><th scope="row"><button class="mechanism-head" data-mechanism="12">Proteostasis, autophagy, lysosomes and neurodegeneration</button></th><td><button class="cell" data-mechanism="12" data-group="1" aria-label="Proteostasis, autophagy, lysosomes and neurodegeneration, Evidence synthesis">3</button></td><td><button class="cell" data-mechanism="12" data-group="2" aria-label="Proteostasis, autophagy, lysosomes and neurodegeneration, Randomized / crossover">0</button></td><td><button class="cell" data-mechanism="12" data-group="3" aria-label="Proteostasis, autophagy, lysosomes and neurodegeneration, Other human studies">0</button></td><td><button class="cell" data-mechanism="12" data-group="4" aria-label="Proteostasis, autophagy, lysosomes and neurodegeneration, Observational / genetic">0</button></td><td><button class="cell" data-mechanism="12" data-group="5" aria-label="Proteostasis, autophagy, lysosomes and neurodegeneration, Mendelian randomization">0</button></td><td><button class="cell" data-mechanism="12" data-group="6" aria-label="Proteostasis, autophagy, lysosomes and neurodegeneration, Model / tissue studies">0</button></td><td><button class="cell" data-mechanism="12" data-group="7" aria-label="Proteostasis, autophagy, lysosomes and neurodegeneration, Methods / guidance">2</button></td></tr><tr><th scope="row"><button class="mechanism-head" data-mechanism="13">Microenvironment: carbon dioxide, pH, oxygen and electrolytes</button></th><td><button class="cell" data-mechanism="13" data-group="1" aria-label="Microenvironment: carbon dioxide, pH, oxygen and electrolytes, Evidence synthesis">1</button></td><td><button class="cell" data-mechanism="13" data-group="2" aria-label="Microenvironment: carbon dioxide, pH, oxygen and electrolytes, Randomized / crossover">0</button></td><td><button class="cell" data-mechanism="13" data-group="3" aria-label="Microenvironment: carbon dioxide, pH, oxygen and electrolytes, Other human studies">0</button></td><td><button class="cell" data-mechanism="13" data-group="4" aria-label="Microenvironment: carbon dioxide, pH, oxygen and electrolytes, Observational / genetic">0</button></td><td><button class="cell" data-mechanism="13" data-group="5" aria-label="Microenvironment: carbon dioxide, pH, oxygen and electrolytes, Mendelian randomization">0</button></td><td><button class="cell" data-mechanism="13" data-group="6" aria-label="Microenvironment: carbon dioxide, pH, oxygen and electrolytes, Model / tissue studies">1</button></td><td><button class="cell" data-mechanism="13" data-group="7" aria-label="Microenvironment: carbon dioxide, pH, oxygen and electrolytes, Methods / guidance">2</button></td></tr><tr><th scope="row"><button class="mechanism-head" data-mechanism="14">Neurovascular coupling, perfusion and the blood-brain barrier</button></th><td><button class="cell" data-mechanism="14" data-group="1" aria-label="Neurovascular coupling, perfusion and the blood-brain barrier, Evidence synthesis">2</button></td><td><button class="cell" data-mechanism="14" data-group="2" aria-label="Neurovascular coupling, perfusion and the blood-brain barrier, Randomized / crossover">0</button></td><td><button class="cell" data-mechanism="14" data-group="3" aria-label="Neurovascular coupling, perfusion and the blood-brain barrier, Other human studies">0</button></td><td><button class="cell" data-mechanism="14" data-group="4" aria-label="Neurovascular coupling, perfusion and the blood-brain barrier, Observational / genetic">0</button></td><td><button class="cell" data-mechanism="14" data-group="5" aria-label="Neurovascular coupling, perfusion and the blood-brain barrier, Mendelian randomization">0</button></td><td><button class="cell" data-mechanism="14" data-group="6" aria-label="Neurovascular coupling, perfusion and the blood-brain barrier, Model / tissue studies">1</button></td><td><button class="cell" data-mechanism="14" data-group="7" aria-label="Neurovascular coupling, perfusion and the blood-brain barrier, Methods / guidance">1</button></td></tr><tr><th scope="row"><button class="mechanism-head" data-mechanism="15">CSF dynamics and glymphatic clearance</button></th><td><button class="cell" data-mechanism="15" data-group="1" aria-label="CSF dynamics and glymphatic clearance, Evidence synthesis">1</button></td><td><button class="cell" data-mechanism="15" data-group="2" aria-label="CSF dynamics and glymphatic clearance, Randomized / crossover">0</button></td><td><button class="cell" data-mechanism="15" data-group="3" aria-label="CSF dynamics and glymphatic clearance, Other human studies">0</button></td><td><button class="cell" data-mechanism="15" data-group="4" aria-label="CSF dynamics and glymphatic clearance, Observational / genetic">1</button></td><td><button class="cell" data-mechanism="15" data-group="5" aria-label="CSF dynamics and glymphatic clearance, Mendelian randomization">0</button></td><td><button class="cell" data-mechanism="15" data-group="6" aria-label="CSF dynamics and glymphatic clearance, Model / tissue studies">3</button></td><td><button class="cell" data-mechanism="15" data-group="7" aria-label="CSF dynamics and glymphatic clearance, Methods / guidance">3</button></td></tr><tr><th scope="row"><button class="mechanism-head" data-mechanism="16">Microbiome and the gut-brain axis</button></th><td><button class="cell" data-mechanism="16" data-group="1" aria-label="Microbiome and the gut-brain axis, Evidence synthesis">3</button></td><td><button class="cell" data-mechanism="16" data-group="2" aria-label="Microbiome and the gut-brain axis, Randomized / crossover">1</button></td><td><button class="cell" data-mechanism="16" data-group="3" aria-label="Microbiome and the gut-brain axis, Other human studies">0</button></td><td><button class="cell" data-mechanism="16" data-group="4" aria-label="Microbiome and the gut-brain axis, Observational / genetic">1</button></td><td><button class="cell" data-mechanism="16" data-group="5" aria-label="Microbiome and the gut-brain axis, Mendelian randomization">0</button></td><td><button class="cell" data-mechanism="16" data-group="6" aria-label="Microbiome and the gut-brain axis, Model / tissue studies">1</button></td><td><button class="cell" data-mechanism="16" data-group="7" aria-label="Microbiome and the gut-brain axis, Methods / guidance">1</button></td></tr><tr><th scope="row"><button class="mechanism-head" data-mechanism="17">Pharmacological, toxic and iatrogenic mechanisms</button></th><td><button class="cell" data-mechanism="17" data-group="1" aria-label="Pharmacological, toxic and iatrogenic mechanisms, Evidence synthesis">2</button></td><td><button class="cell" data-mechanism="17" data-group="2" aria-label="Pharmacological, toxic and iatrogenic mechanisms, Randomized / crossover">1</button></td><td><button class="cell" data-mechanism="17" data-group="3" aria-label="Pharmacological, toxic and iatrogenic mechanisms, Other human studies">0</button></td><td><button class="cell" data-mechanism="17" data-group="4" aria-label="Pharmacological, toxic and iatrogenic mechanisms, Observational / genetic">1</button></td><td><button class="cell" data-mechanism="17" data-group="5" aria-label="Pharmacological, toxic and iatrogenic mechanisms, Mendelian randomization">0</button></td><td><button class="cell" data-mechanism="17" data-group="6" aria-label="Pharmacological, toxic and iatrogenic mechanisms, Model / tissue studies">0</button></td><td><button class="cell" data-mechanism="17" data-group="7" aria-label="Pharmacological, toxic and iatrogenic mechanisms, Methods / guidance">0</button></td></tr><tr><th scope="row"><button class="mechanism-head" data-mechanism="18">Phenotypes, course, remission and interventions</button></th><td><button class="cell" data-mechanism="18" data-group="1" aria-label="Phenotypes, course, remission and interventions, Evidence synthesis">3</button></td><td><button class="cell" data-mechanism="18" data-group="2" aria-label="Phenotypes, course, remission and interventions, Randomized / crossover">0</button></td><td><button class="cell" data-mechanism="18" data-group="3" aria-label="Phenotypes, course, remission and interventions, Other human studies">0</button></td><td><button class="cell" data-mechanism="18" data-group="4" aria-label="Phenotypes, course, remission and interventions, Observational / genetic">0</button></td><td><button class="cell" data-mechanism="18" data-group="5" aria-label="Phenotypes, course, remission and interventions, Mendelian randomization">0</button></td><td><button class="cell" data-mechanism="18" data-group="6" aria-label="Phenotypes, course, remission and interventions, Model / tissue studies">0</button></td><td><button class="cell" data-mechanism="18" data-group="7" aria-label="Phenotypes, course, remission and interventions, Methods / guidance">1</button></td></tr><tr><th scope="row"><button class="mechanism-head" data-mechanism="19">Measurement methods, biomarkers and competing causal models</button></th><td><button class="cell" data-mechanism="19" data-group="1" aria-label="Measurement methods, biomarkers and competing causal models, Evidence synthesis">3</button></td><td><button class="cell" data-mechanism="19" data-group="2" aria-label="Measurement methods, biomarkers and competing causal models, Randomized / crossover">0</button></td><td><button class="cell" data-mechanism="19" data-group="3" aria-label="Measurement methods, biomarkers and competing causal models, Other human studies">0</button></td><td><button class="cell" data-mechanism="19" data-group="4" aria-label="Measurement methods, biomarkers and competing causal models, Observational / genetic">1</button></td><td><button class="cell" data-mechanism="19" data-group="5" aria-label="Measurement methods, biomarkers and competing causal models, Mendelian randomization">0</button></td><td><button class="cell" data-mechanism="19" data-group="6" aria-label="Measurement methods, biomarkers and competing causal models, Model / tissue studies">2</button></td><td><button class="cell" data-mechanism="19" data-group="7" aria-label="Measurement methods, biomarkers and competing causal models, Methods / guidance">5</button></td></tr></tbody></table></div>
+<div class="legend"><span>Count distribution</span><span><i class="swatch" style="background:#F1F0E9"></i>0</span><span><i class="swatch" style="background:#E1E8DE"></i>1–2</span><span><i class="swatch" style="background:#CEDBD1"></i>3–5</span><span><i class="swatch" style="background:#B7C9CC"></i>6–10</span><span><i class="swatch" style="background:#B9B1C4"></i>11 or more</span></div>
+<div class="note-box"><p>Deduplication: a library record is counted once within each cell. It may occur in multiple mechanism and method groups, so cell counts cannot be summed as independent studies.</p><p>The 7 groups are reading summaries and do not replace the original METHOD tags. Secondary analyses, mediation and computational models remain as recorded. These groups are not seven comparable levels of causal evidence.</p><p>The 141 records include 139 journal records, one book and one registered protocol. Papers from the same parent trial have not been consolidated across the entire library.</p></div></section>
+<section class="view" id="mechanism" hidden><button class="back" data-page="overview">Back to overview</button><div class="select-row"><select id="mechanism-select" aria-label="Choose a mechanism"><option value="0">All mechanisms and unassigned records</option><option value="1">Genetics, epigenetics and gene-environment interaction</option><option value="2">Neurodevelopment, critical periods and synaptic pruning</option><option value="3">Environment, stress, nutrition and social conditions</option><option value="4">Sleep and circadian regulation</option><option value="5">Hypothalamic-pituitary-adrenal axis, receptor sensitivity and feedback</option><option value="6">Immunity, microglia, astrocytes and kynurenine</option><option value="7">Neuronal autoantibodies and autoimmune encephalitis</option><option value="8">Neuroinfections and postinfectious autoimmunity</option><option value="9">Neurotransmitters, receptors and ion channels</option><option value="10">Synaptic plasticity, networks and EEG</option><option value="11">Energy metabolism, mitochondria and redox</option><option value="12">Proteostasis, autophagy, lysosomes and neurodegeneration</option><option value="13">Microenvironment: carbon dioxide, pH, oxygen and electrolytes</option><option value="14">Neurovascular coupling, perfusion and the blood-brain barrier</option><option value="15">CSF dynamics and glymphatic clearance</option><option value="16">Microbiome and the gut-brain axis</option><option value="17">Pharmacological, toxic and iatrogenic mechanisms</option><option value="18">Phenotypes, course, remission and interventions</option><option value="19">Measurement methods, biomarkers and competing causal models</option></select></div><h2 id="mechanism-title">Mechanism details</h2><p class="muted" id="mechanism-context"></p></section>
+<section class="view" id="method" hidden><button class="back" data-page="overview">Back to overview</button><div class="select-row"><select id="method-select" aria-label="Choose a study method group"><option value="1">Reviews and evidence synthesis</option><option value="2">Randomized controlled and crossover interventions</option><option value="3">Other human interventions and case studies</option><option value="4">Human observational studies, genetic associations and secondary analyses</option><option value="5">Mendelian randomization</option><option value="6">Animal, cell and ex vivo tissue studies</option><option value="7">Methods, computational models, guidance and protocols</option></select></div><h2 id="method-title">Study method details</h2><p class="muted" id="method-context"></p><div class="distribution" id="method-distribution"></div><details class="definitions"><summary>View the 7 reading groups and their original methods</summary><section class="method-definition" data-group="1"><h3>Reviews and evidence synthesis</h3><p>Systematic, narrative, scoping and methodological reviews, and all types of meta-analysis.</p><p class="muted">Included methods: Systematic review; Meta-analysis; Individual participant data meta-analysis; Network meta-analysis; Scoping review; Umbrella review; Narrative review; Review (subtype unconfirmed); Methodological review</p></section><section class="method-definition" data-group="2"><h3>Randomized controlled and crossover interventions</h3><p>Randomized controlled and crossover designs remain distinct. Crossover design alone does not guarantee random allocation.</p><p class="muted">Included methods: Randomized controlled trial; Crossover intervention trial</p></section><section class="method-definition" data-group="3"><h3>Other human interventions and case studies</h3><p>Human interventions with unconfirmed randomization, single cases and case series are kept separate from randomized trials.</p><p class="muted">Included methods: Controlled human intervention (randomization unconfirmed); Human experiment (randomization unconfirmed); Single case report; Case series</p></section><section class="method-definition" data-group="4"><h3>Human observational studies, genetic associations and secondary analyses</h3><p>Cohort, cross-sectional, case-control, registry, genetic association and secondary-data studies. These cannot be directly interpreted as causal evidence.</p><p class="muted">Included methods: Prospective cohort study; Retrospective study; Longitudinal or repeated-measures study; Case-control study; Cross-sectional study; Registry-based study; Human observational study (specific design requires review); Genome-wide association study; Genetic association analysis; Gene-environment interaction analysis; Epigenetic analysis; Gene expression or transcriptomic analysis; Secondary analysis of existing data</p></section><section class="method-definition" data-group="5"><h3>Mendelian randomization</h3><p>Studies that actually perform genetic instrumental-variable inference. Tutorials are excluded; causal interpretation depends on instrumental-variable assumptions.</p><p class="muted">Included methods: Mendelian randomization analysis</p></section><section class="method-definition" data-group="6"><h3>Animal, cell and ex vivo tissue studies</h3><p>Animal interventions, cell cultures, ex vivo and postmortem tissue, and microbiota transfer. Species and experimental levels remain distinct.</p><p class="muted">Included methods: Animal intervention experiment; Animal tissue study; In vitro cell experiment; Ex vivo tissue study; Human postmortem tissue study; Microbiota transfer experiment</p></section><section class="method-definition" data-group="7"><h3>Methods, computational models, guidance and protocols</h3><p>Method validation, computational and statistical analyses, guidelines, consensus, theoretical frameworks and protocols. Includes non-original research material and must not be treated as efficacy trials.</p><p class="muted">Included methods: Diagnostic accuracy study; Method validation or replication study; Methodological review; Methods guideline or tutorial; Clinical guideline; Clinical or methodological consensus; Commission report; Conceptual or theoretical framework; Study protocol or registry record; Editorial; Commentary or response; Book or textbook (no single study design applies); News report; Statistical network analysis; Computational modeling or simulation; Machine learning analysis; Mediation analysis; Bibliometric analysis</p></section></details></section>
+<section class="view" id="gaps" hidden><div id="coverage-list"></div></section>
+<section id="paper-results" hidden><div class="detail-controls"><label><input id="include-candidates" type="checkbox" checked> Include all candidates and records needing review for this topic</label><span id="detail-count" aria-live="polite"></span></div><p id="cross-context" class="note-box" hidden></p><div id="paper-list"></div><p id="empty" class="empty" hidden>No records match the current filters. This does not imply that no related research exists worldwide.</p></section>
+<div id="paper-bank" hidden><article class="paper" data-i="82" data-direct-mechanisms="1" data-all-mechanisms="1 10" data-legacy-mechanisms="1 10" data-direct-groups="4" data-all-groups="4" data-legacy-groups="4" data-keyword="1" data-archive="0" data-type="journalArticle" hidden>
+      <div class="paper-top"><span class="status pending">Needs review (includes keyword-only matches)</span><span class="muted">Source cited in current map claims</span></div>
+      
+      <dl><dt>Mechanism assignment (direct basis)</dt><dd>Genetics, epigenetics and gene-environment interaction</dd><dt>Mechanism assignment (needs review)</dt><dd>Synaptic plasticity, networks and EEG</dd>
+      <dt>Study design and methods</dt><dd>Genome-wide association study</dd>
+      
+      </dl>
+      </article><article class="paper" data-i="83" data-direct-mechanisms="1 5" data-all-mechanisms="1 3 5" data-legacy-mechanisms="1 3 5" data-direct-groups="4" data-all-groups="4" data-legacy-groups="4" data-keyword="1" data-archive="0" data-type="journalArticle" hidden>
+      <div class="paper-top"><span class="status pending">Needs review (includes keyword-only matches)</span><span class="muted">Source cited in current map claims</span></div>
+      
+      <dl><dt>Mechanism assignment (direct basis)</dt><dd>Genetics, epigenetics and gene-environment interaction; Hypothalamic-pituitary-adrenal axis, receptor sensitivity and feedback</dd><dt>Mechanism assignment (needs review)</dt><dd>Environment, stress, nutrition and social conditions</dd>
+      <dt>Study design and methods</dt><dd>Epigenetic analysis; Genetic association analysis<br><span class="muted">Requires verification: Gene-environment interaction analysis</span></dd>
+      
+      </dl>
+      </article><article class="paper" data-i="84" data-direct-mechanisms="1" data-all-mechanisms="1 3" data-legacy-mechanisms="1 3" data-direct-groups="4" data-all-groups="4" data-legacy-groups="4" data-keyword="1" data-archive="0" data-type="journalArticle" hidden>
+      <div class="paper-top"><span class="status pending">Needs review (includes keyword-only matches)</span><span class="muted">Source cited in current map claims</span></div>
+      
+      <dl><dt>Mechanism assignment (direct basis)</dt><dd>Genetics, epigenetics and gene-environment interaction</dd><dt>Mechanism assignment (needs review)</dt><dd>Environment, stress, nutrition and social conditions</dd>
+      <dt>Study design and methods</dt><dd>Genetic association analysis<br><span class="muted">Requires verification: Gene-environment interaction analysis</span></dd>
+      
+      </dl>
+      </article><article class="paper" data-i="85" data-direct-mechanisms="1" data-all-mechanisms="1" data-legacy-mechanisms="1" data-direct-groups="4" data-all-groups="4" data-legacy-groups="4" data-keyword="0" data-archive="0" data-type="journalArticle" hidden>
+      <div class="paper-top"><span class="status ">Direct basis available; awaiting human confirmation</span><span class="muted">Source cited in current map claims</span></div>
+      
+      <dl><dt>Mechanism assignment (direct basis)</dt><dd>Genetics, epigenetics and gene-environment interaction</dd>
+      <dt>Study design and methods</dt><dd>Gene-environment interaction analysis; Genetic association analysis; Secondary analysis of existing data</dd>
+      
+      </dl>
+      </article><article class="paper" data-i="86" data-direct-mechanisms="2" data-all-mechanisms="2" data-legacy-mechanisms="2" data-direct-groups="4 6" data-all-groups="4 6" data-legacy-groups="4 6" data-keyword="0" data-archive="0" data-type="journalArticle" hidden>
+      <div class="paper-top"><span class="status ">Direct basis available; awaiting human confirmation</span><span class="muted">Source cited in current map claims</span></div>
+      
+      <dl><dt>Mechanism assignment (direct basis)</dt><dd>Neurodevelopment, critical periods and synaptic pruning</dd>
+      <dt>Study design and methods</dt><dd>Animal intervention experiment; Genetic association analysis</dd>
+      
+      </dl>
+      </article><article class="paper" data-i="87" data-direct-mechanisms="2" data-all-mechanisms="2 10" data-legacy-mechanisms="2 10" data-direct-groups="6" data-all-groups="6" data-legacy-groups="6" data-keyword="1" data-archive="0" data-type="journalArticle" hidden>
+      <div class="paper-top"><span class="status pending">Needs review (includes keyword-only matches)</span><span class="muted">Source cited in current map claims</span></div>
+      
+      <dl><dt>Mechanism assignment (direct basis)</dt><dd>Neurodevelopment, critical periods and synaptic pruning</dd><dt>Mechanism assignment (needs review)</dt><dd>Synaptic plasticity, networks and EEG</dd>
+      <dt>Study design and methods</dt><dd>Animal intervention experiment</dd>
+      
+      </dl>
+      </article><article class="paper" data-i="88" data-direct-mechanisms="2" data-all-mechanisms="2 10" data-legacy-mechanisms="2 10" data-direct-groups="4" data-all-groups="4" data-legacy-groups="4" data-keyword="1" data-archive="0" data-type="journalArticle" hidden>
+      <div class="paper-top"><span class="status pending">Needs review (includes keyword-only matches)</span><span class="muted">Source cited in current map claims</span></div>
+      
+      <dl><dt>Mechanism assignment (direct basis)</dt><dd>Neurodevelopment, critical periods and synaptic pruning</dd><dt>Mechanism assignment (needs review)</dt><dd>Synaptic plasticity, networks and EEG</dd>
+      <dt>Study design and methods</dt><dd>Gene expression or transcriptomic analysis; Secondary analysis of existing data</dd>
+      
+      </dl>
+      </article><article class="paper" data-i="89" data-direct-mechanisms="2" data-all-mechanisms="2" data-legacy-mechanisms="2" data-direct-groups="1" data-all-groups="1" data-legacy-groups="1" data-keyword="0" data-archive="0" data-type="journalArticle" hidden>
+      <div class="paper-top"><span class="status ">Direct basis available; awaiting human confirmation</span><span class="muted">Source cited in current map claims</span></div>
+      
+      <dl><dt>Mechanism assignment (direct basis)</dt><dd>Neurodevelopment, critical periods and synaptic pruning</dd>
+      <dt>Study design and methods</dt><dd>Review (subtype unconfirmed)</dd>
+      
+      </dl>
+      </article><article class="paper" data-i="90" data-direct-mechanisms="3" data-all-mechanisms="3 6" data-legacy-mechanisms="3 6" data-direct-groups="6" data-all-groups="6" data-legacy-groups="6" data-keyword="1" data-archive="0" data-type="journalArticle" hidden>
+      <div class="paper-top"><span class="status pending">Needs review (includes keyword-only matches)</span><span class="muted">Source cited in current map claims</span></div>
+      
+      <dl><dt>Mechanism assignment (direct basis)</dt><dd>Environment, stress, nutrition and social conditions</dd><dt>Mechanism assignment (needs review)</dt><dd>Immunity, microglia, astrocytes and kynurenine</dd>
+      <dt>Study design and methods</dt><dd>Animal intervention experiment</dd>
+      
+      </dl>
+      </article><article class="paper" data-i="91" data-direct-mechanisms="3" data-all-mechanisms="3" data-legacy-mechanisms="3" data-direct-groups="1" data-all-groups="1" data-legacy-groups="1" data-keyword="0" data-archive="0" data-type="journalArticle" hidden>
+      <div class="paper-top"><span class="status ">Direct basis available; awaiting human confirmation</span><span class="muted">Source cited in current map claims</span></div>
+      
+      <dl><dt>Mechanism assignment (direct basis)</dt><dd>Environment, stress, nutrition and social conditions</dd>
+      <dt>Study design and methods</dt><dd>Meta-analysis; Systematic review</dd>
+      
+      </dl>
+      </article><article class="paper" data-i="92" data-direct-mechanisms="3" data-all-mechanisms="3" data-legacy-mechanisms="3" data-direct-groups="1" data-all-groups="1" data-legacy-groups="1" data-keyword="0" data-archive="0" data-type="journalArticle" hidden>
+      <div class="paper-top"><span class="status ">Direct basis available; awaiting human confirmation</span><span class="muted">Source cited in current map claims</span></div>
+      
+      <dl><dt>Mechanism assignment (direct basis)</dt><dd>Environment, stress, nutrition and social conditions</dd>
+      <dt>Study design and methods</dt><dd>Review (subtype unconfirmed)</dd>
+      
+      </dl>
+      </article><article class="paper" data-i="93" data-direct-mechanisms="3" data-all-mechanisms="3" data-legacy-mechanisms="3" data-direct-groups="1" data-all-groups="1" data-legacy-groups="1" data-keyword="0" data-archive="0" data-type="journalArticle" hidden>
+      <div class="paper-top"><span class="status ">Direct basis available; awaiting human confirmation</span><span class="muted">Source cited in current map claims</span></div>
+      
+      <dl><dt>Mechanism assignment (direct basis)</dt><dd>Environment, stress, nutrition and social conditions</dd>
+      <dt>Study design and methods</dt><dd>Review (subtype unconfirmed)</dd>
+      
+      </dl>
+      </article><article class="paper" data-i="94" data-direct-mechanisms="4" data-all-mechanisms="4" data-legacy-mechanisms="4" data-direct-groups="2 7" data-all-groups="2 7" data-legacy-groups="2 7" data-keyword="0" data-archive="0" data-type="journalArticle" hidden>
+      <div class="paper-top"><span class="status ">Direct basis available; awaiting human confirmation</span><span class="muted">Source cited in current map claims</span></div>
+      
+      <dl><dt>Mechanism assignment (direct basis)</dt><dd>Sleep and circadian regulation</dd>
+      <dt>Study design and methods</dt><dd>Mediation analysis; Randomized controlled trial</dd>
+      
+      </dl>
+      </article><article class="paper" data-i="95" data-direct-mechanisms="4" data-all-mechanisms="4" data-legacy-mechanisms="4" data-direct-groups="4" data-all-groups="4" data-legacy-groups="4" data-keyword="0" data-archive="0" data-type="journalArticle" hidden>
+      <div class="paper-top"><span class="status ">Direct basis available; awaiting human confirmation</span><span class="muted">Source cited in current map claims</span></div>
+      
+      <dl><dt>Mechanism assignment (direct basis)</dt><dd>Sleep and circadian regulation</dd>
+      <dt>Study design and methods</dt><dd>Cross-sectional study</dd>
+      
+      </dl>
+      </article><article class="paper" data-i="96" data-direct-mechanisms="4" data-all-mechanisms="4" data-legacy-mechanisms="4" data-direct-groups="1" data-all-groups="1" data-legacy-groups="1" data-keyword="0" data-archive="0" data-type="journalArticle" hidden>
+      <div class="paper-top"><span class="status ">Direct basis available; awaiting human confirmation</span><span class="muted">Source cited in current map claims</span></div>
+      
+      <dl><dt>Mechanism assignment (direct basis)</dt><dd>Sleep and circadian regulation</dd>
+      <dt>Study design and methods</dt><dd>Review (subtype unconfirmed)</dd>
+      
+      </dl>
+      </article><article class="paper" data-i="97" data-direct-mechanisms="5" data-all-mechanisms="5" data-legacy-mechanisms="5" data-direct-groups="1" data-all-groups="1" data-legacy-groups="1" data-keyword="0" data-archive="0" data-type="journalArticle" hidden>
+      <div class="paper-top"><span class="status ">Direct basis available; awaiting human confirmation</span><span class="muted">Source cited in current map claims</span></div>
+      
+      <dl><dt>Mechanism assignment (direct basis)</dt><dd>Hypothalamic-pituitary-adrenal axis, receptor sensitivity and feedback</dd>
+      <dt>Study design and methods</dt><dd>Review (subtype unconfirmed)</dd>
+      
+      </dl>
+      </article><article class="paper" data-i="98" data-direct-mechanisms="5" data-all-mechanisms="5" data-legacy-mechanisms="5" data-direct-groups="1" data-all-groups="1" data-legacy-groups="1" data-keyword="0" data-archive="0" data-type="journalArticle" hidden>
+      <div class="paper-top"><span class="status ">Direct basis available; awaiting human confirmation</span><span class="muted">Source cited in current map claims</span></div>
+      
+      <dl><dt>Mechanism assignment (direct basis)</dt><dd>Hypothalamic-pituitary-adrenal axis, receptor sensitivity and feedback</dd>
+      <dt>Study design and methods</dt><dd>Review (subtype unconfirmed)</dd>
+      
+      </dl>
+      </article><article class="paper" data-i="99" data-direct-mechanisms="5" data-all-mechanisms="5 6" data-legacy-mechanisms="5 6" data-direct-groups="1" data-all-groups="1" data-legacy-groups="1" data-keyword="1" data-archive="0" data-type="journalArticle" hidden>
+      <div class="paper-top"><span class="status pending">Needs review (includes keyword-only matches)</span><span class="muted">Source cited in current map claims</span></div>
+      
+      <dl><dt>Mechanism assignment (direct basis)</dt><dd>Hypothalamic-pituitary-adrenal axis, receptor sensitivity and feedback</dd><dt>Mechanism assignment (needs review)</dt><dd>Immunity, microglia, astrocytes and kynurenine</dd>
+      <dt>Study design and methods</dt><dd>Review (subtype unconfirmed)</dd>
+      
+      </dl>
+      </article><article class="paper" data-i="100" data-direct-mechanisms="5" data-all-mechanisms="5" data-legacy-mechanisms="5" data-direct-groups="1" data-all-groups="1" data-legacy-groups="1" data-keyword="0" data-archive="0" data-type="journalArticle" hidden>
+      <div class="paper-top"><span class="status ">Direct basis available; awaiting human confirmation</span><span class="muted">Source cited in current map claims</span></div>
+      
+      <dl><dt>Mechanism assignment (direct basis)</dt><dd>Hypothalamic-pituitary-adrenal axis, receptor sensitivity and feedback</dd>
+      <dt>Study design and methods</dt><dd>Review (subtype unconfirmed)</dd>
+      
+      </dl>
+      </article><article class="paper" data-i="101" data-direct-mechanisms="6" data-all-mechanisms="6 10" data-legacy-mechanisms="6 10" data-direct-groups="1" data-all-groups="1" data-legacy-groups="1" data-keyword="1" data-archive="0" data-type="journalArticle" hidden>
+      <div class="paper-top"><span class="status pending">Needs review (includes keyword-only matches)</span><span class="muted">Source cited in current map claims</span></div>
+      
+      <dl><dt>Mechanism assignment (direct basis)</dt><dd>Immunity, microglia, astrocytes and kynurenine</dd><dt>Mechanism assignment (needs review)</dt><dd>Synaptic plasticity, networks and EEG</dd>
+      <dt>Study design and methods</dt><dd>Review (subtype unconfirmed)</dd>
+      
+      </dl>
+      </article><article class="paper" data-i="102" data-direct-mechanisms="6" data-all-mechanisms="6 18 19" data-legacy-mechanisms="6 18 19" data-direct-groups="2" data-all-groups="2" data-legacy-groups="2" data-keyword="1" data-archive="0" data-type="journalArticle" hidden>
+      <div class="paper-top"><span class="status pending">Needs review (includes keyword-only matches)</span><span class="muted">Source cited in current map claims</span></div>
+      
+      <dl><dt>Mechanism assignment (direct basis)</dt><dd>Immunity, microglia, astrocytes and kynurenine</dd><dt>Mechanism assignment (needs review)</dt><dd>Phenotypes, course, remission and interventions; Measurement methods, biomarkers and competing causal models</dd>
+      <dt>Study design and methods</dt><dd>Randomized controlled trial</dd>
+      
+      </dl>
+      </article><article class="paper" data-i="103" data-direct-mechanisms="6" data-all-mechanisms="6" data-legacy-mechanisms="6" data-direct-groups="1" data-all-groups="1" data-legacy-groups="1" data-keyword="0" data-archive="0" data-type="journalArticle" hidden>
+      <div class="paper-top"><span class="status ">Direct basis available; awaiting human confirmation</span><span class="muted">Source cited in current map claims</span></div>
+      
+      <dl><dt>Mechanism assignment (direct basis)</dt><dd>Immunity, microglia, astrocytes and kynurenine</dd>
+      <dt>Study design and methods</dt><dd>Individual participant data meta-analysis; Meta-analysis</dd>
+      
+      </dl>
+      </article><article class="paper" data-i="104" data-direct-mechanisms="6" data-all-mechanisms="6 18" data-legacy-mechanisms="6 18" data-direct-groups="3 4" data-all-groups="3 4" data-legacy-groups="3 4" data-keyword="1" data-archive="0" data-type="journalArticle" hidden>
+      <div class="paper-top"><span class="status pending">Needs review (includes keyword-only matches)</span><span class="muted">Source cited in current map claims</span></div>
+      
+      <dl><dt>Mechanism assignment (direct basis)</dt><dd>Immunity, microglia, astrocytes and kynurenine</dd><dt>Mechanism assignment (needs review)</dt><dd>Phenotypes, course, remission and interventions</dd>
+      <dt>Study design and methods</dt><dd>Controlled human intervention (randomization unconfirmed); Longitudinal or repeated-measures study</dd>
+      
+      </dl>
+      </article><article class="paper" data-i="105" data-direct-mechanisms="6" data-all-mechanisms="6" data-legacy-mechanisms="6" data-direct-groups="1" data-all-groups="1" data-legacy-groups="1" data-keyword="0" data-archive="0" data-type="journalArticle" hidden>
+      <div class="paper-top"><span class="status ">Direct basis available; awaiting human confirmation</span><span class="muted">Source cited in current map claims</span></div>
+      
+      <dl><dt>Mechanism assignment (direct basis)</dt><dd>Immunity, microglia, astrocytes and kynurenine</dd>
+      <dt>Study design and methods</dt><dd>Systematic review</dd>
+      
+      </dl>
+      </article><article class="paper" data-i="106" data-direct-mechanisms="7" data-all-mechanisms="7 9 10" data-legacy-mechanisms="7 9 10" data-direct-groups="6" data-all-groups="6" data-legacy-groups="6" data-keyword="1" data-archive="0" data-type="journalArticle" hidden>
+      <div class="paper-top"><span class="status pending">Needs review (includes keyword-only matches)</span><span class="muted">Source cited in current map claims</span></div>
+      
+      <dl><dt>Mechanism assignment (direct basis)</dt><dd>Neuronal autoantibodies and autoimmune encephalitis</dd><dt>Mechanism assignment (needs review)</dt><dd>Neurotransmitters, receptors and ion channels; Synaptic plasticity, networks and EEG</dd>
+      <dt>Study design and methods</dt><dd>In vitro cell experiment<br><span class="muted">Requires verification: Animal intervention experiment</span></dd>
+      
+      </dl>
+      </article><article class="paper" data-i="107" data-direct-mechanisms="7" data-all-mechanisms="7" data-legacy-mechanisms="7" data-direct-groups="7" data-all-groups="7" data-legacy-groups="7" data-keyword="0" data-archive="0" data-type="journalArticle" hidden>
+      <div class="paper-top"><span class="status ">Direct basis available; awaiting human confirmation</span><span class="muted">Source cited in current map claims</span></div>
+      
+      <dl><dt>Mechanism assignment (direct basis)</dt><dd>Neuronal autoantibodies and autoimmune encephalitis</dd>
+      <dt>Study design and methods</dt><dd>Clinical or methodological consensus</dd>
+      
+      </dl>
+      </article><article class="paper" data-i="108" data-direct-mechanisms="8" data-all-mechanisms="7 8 18" data-legacy-mechanisms="7 8 18" data-direct-groups="4" data-all-groups="4" data-legacy-groups="4" data-keyword="1" data-archive="0" data-type="journalArticle" hidden>
+      <div class="paper-top"><span class="status pending">Needs review (includes keyword-only matches)</span><span class="muted">Source cited in current map claims</span></div>
+      
+      <dl><dt>Mechanism assignment (direct basis)</dt><dd>Neuroinfections and postinfectious autoimmunity</dd><dt>Mechanism assignment (needs review)</dt><dd>Neuronal autoantibodies and autoimmune encephalitis; Phenotypes, course, remission and interventions</dd>
+      <dt>Study design and methods</dt><dd>Prospective cohort study; Retrospective study</dd>
+      
+      </dl>
+      </article><article class="paper" data-i="109" data-direct-mechanisms="8" data-all-mechanisms="8" data-legacy-mechanisms="8" data-direct-groups="4" data-all-groups="4" data-legacy-groups="4" data-keyword="0" data-archive="0" data-type="journalArticle" hidden>
+      <div class="paper-top"><span class="status ">Direct basis available; awaiting human confirmation</span><span class="muted">Source cited in current map claims</span></div>
+      
+      <dl><dt>Mechanism assignment (direct basis)</dt><dd>Neuroinfections and postinfectious autoimmunity</dd>
+      <dt>Study design and methods</dt><dd>Longitudinal or repeated-measures study; Registry-based study</dd>
+      
+      </dl>
+      </article><article class="paper" data-i="110" data-direct-mechanisms="9" data-all-mechanisms="1 9" data-legacy-mechanisms="1 9" data-direct-groups="4" data-all-groups="4" data-legacy-groups="4" data-keyword="1" data-archive="0" data-type="journalArticle" hidden>
+      <div class="paper-top"><span class="status pending">Needs review (includes keyword-only matches)</span><span class="muted">Source cited in current map claims</span></div>
+      
+      <dl><dt>Mechanism assignment (direct basis)</dt><dd>Neurotransmitters, receptors and ion channels</dd><dt>Mechanism assignment (needs review)</dt><dd>Genetics, epigenetics and gene-environment interaction</dd>
+      <dt>Study design and methods</dt><dd>Genome-wide association study</dd>
+      
+      </dl>
+      </article><article class="paper" data-i="111" data-direct-mechanisms="9" data-all-mechanisms="9" data-legacy-mechanisms="9" data-direct-groups="4" data-all-groups="4" data-legacy-groups="4" data-keyword="0" data-archive="0" data-type="journalArticle" hidden>
+      <div class="paper-top"><span class="status ">Direct basis available; awaiting human confirmation</span><span class="muted">Source cited in current map claims</span></div>
+      
+      <dl><dt>Mechanism assignment (direct basis)</dt><dd>Neurotransmitters, receptors and ion channels</dd>
+      <dt>Study design and methods</dt><dd>Prospective cohort study</dd>
+      
+      </dl>
+      </article><article class="paper" data-i="112" data-direct-mechanisms="9" data-all-mechanisms="9 18" data-legacy-mechanisms="9 18" data-direct-groups="2" data-all-groups="2" data-legacy-groups="2" data-keyword="1" data-archive="0" data-type="journalArticle" hidden>
+      <div class="paper-top"><span class="status pending">Needs review (includes keyword-only matches)</span><span class="muted">Source cited in current map claims</span></div>
+      
+      <dl><dt>Mechanism assignment (direct basis)</dt><dd>Neurotransmitters, receptors and ion channels</dd><dt>Mechanism assignment (needs review)</dt><dd>Phenotypes, course, remission and interventions</dd>
+      <dt>Study design and methods</dt><dd>Randomized controlled trial</dd>
+      
+      </dl>
+      </article><article class="paper" data-i="113" data-direct-mechanisms="9" data-all-mechanisms="9" data-legacy-mechanisms="9" data-direct-groups="1" data-all-groups="1" data-legacy-groups="1" data-keyword="0" data-archive="0" data-type="journalArticle" hidden>
+      <div class="paper-top"><span class="status ">Direct basis available; awaiting human confirmation</span><span class="muted">Source cited in current map claims</span></div>
+      
+      <dl><dt>Mechanism assignment (direct basis)</dt><dd>Neurotransmitters, receptors and ion channels</dd>
+      <dt>Study design and methods</dt><dd>Review (subtype unconfirmed)</dd>
+      
+      </dl>
+      </article><article class="paper" data-i="114" data-direct-mechanisms="9" data-all-mechanisms="1 9" data-legacy-mechanisms="1 9" data-direct-groups="1" data-all-groups="1" data-legacy-groups="1" data-keyword="1" data-archive="0" data-type="journalArticle" hidden>
+      <div class="paper-top"><span class="status pending">Needs review (includes keyword-only matches)</span><span class="muted">Source cited in current map claims</span></div>
+      
+      <dl><dt>Mechanism assignment (direct basis)</dt><dd>Neurotransmitters, receptors and ion channels</dd><dt>Mechanism assignment (needs review)</dt><dd>Genetics, epigenetics and gene-environment interaction</dd>
+      <dt>Study design and methods</dt><dd>Review (subtype unconfirmed)</dd>
+      
+      </dl>
+      </article><article class="paper" data-i="115" data-direct-mechanisms="9" data-all-mechanisms="9" data-legacy-mechanisms="9" data-direct-groups="1" data-all-groups="1" data-legacy-groups="1" data-keyword="0" data-archive="0" data-type="journalArticle" hidden>
+      <div class="paper-top"><span class="status ">Direct basis available; awaiting human confirmation</span><span class="muted">Source cited in current map claims</span></div>
+      
+      <dl><dt>Mechanism assignment (direct basis)</dt><dd>Neurotransmitters, receptors and ion channels</dd>
+      <dt>Study design and methods</dt><dd>Review (subtype unconfirmed)</dd>
+      
+      </dl>
+      </article><article class="paper" data-i="116" data-direct-mechanisms="9" data-all-mechanisms="9" data-legacy-mechanisms="9" data-direct-groups="1" data-all-groups="1" data-legacy-groups="1" data-keyword="0" data-archive="0" data-type="journalArticle" hidden>
+      <div class="paper-top"><span class="status ">Direct basis available; awaiting human confirmation</span><span class="muted">Source cited in current map claims</span></div>
+      
+      <dl><dt>Mechanism assignment (direct basis)</dt><dd>Neurotransmitters, receptors and ion channels</dd>
+      <dt>Study design and methods</dt><dd>Review (subtype unconfirmed)</dd>
+      
+      </dl>
+      </article><article class="paper" data-i="117" data-direct-mechanisms="10" data-all-mechanisms="2 6 10" data-legacy-mechanisms="2 6 10" data-direct-groups="6" data-all-groups="6" data-legacy-groups="6" data-keyword="1" data-archive="0" data-type="journalArticle" hidden>
+      <div class="paper-top"><span class="status pending">Needs review (includes keyword-only matches)</span><span class="muted">Source cited in current map claims</span></div>
+      
+      <dl><dt>Mechanism assignment (direct basis)</dt><dd>Synaptic plasticity, networks and EEG</dd><dt>Mechanism assignment (needs review)</dt><dd>Neurodevelopment, critical periods and synaptic pruning; Immunity, microglia, astrocytes and kynurenine</dd>
+      <dt>Study design and methods</dt><dd>In vitro cell experiment</dd>
+      
+      </dl>
+      </article><article class="paper" data-i="118" data-direct-mechanisms="10" data-all-mechanisms="10" data-legacy-mechanisms="10" data-direct-groups="4" data-all-groups="4" data-legacy-groups="4" data-keyword="0" data-archive="0" data-type="journalArticle" hidden>
+      <div class="paper-top"><span class="status ">Direct basis available; awaiting human confirmation</span><span class="muted">Source cited in current map claims</span></div>
+      
+      <dl><dt>Mechanism assignment (direct basis)</dt><dd>Synaptic plasticity, networks and EEG</dd>
+      <dt>Study design and methods</dt><dd>Case-control study; Longitudinal or repeated-measures study</dd>
+      
+      </dl>
+      </article><article class="paper" data-i="119" data-direct-mechanisms="10" data-all-mechanisms="10" data-legacy-mechanisms="10" data-direct-groups="1" data-all-groups="1" data-legacy-groups="1" data-keyword="0" data-archive="0" data-type="journalArticle" hidden>
+      <div class="paper-top"><span class="status ">Direct basis available; awaiting human confirmation</span><span class="muted">Source cited in current map claims</span></div>
+      
+      <dl><dt>Mechanism assignment (direct basis)</dt><dd>Synaptic plasticity, networks and EEG</dd>
+      <dt>Study design and methods</dt><dd>Review (subtype unconfirmed)</dd>
+      
+      </dl>
+      </article><article class="paper" data-i="120" data-direct-mechanisms="10" data-all-mechanisms="10" data-legacy-mechanisms="10" data-direct-groups="1" data-all-groups="1" data-legacy-groups="1" data-keyword="0" data-archive="0" data-type="journalArticle" hidden>
+      <div class="paper-top"><span class="status ">Direct basis available; awaiting human confirmation</span><span class="muted">Source cited in current map claims</span></div>
+      
+      <dl><dt>Mechanism assignment (direct basis)</dt><dd>Synaptic plasticity, networks and EEG</dd>
+      <dt>Study design and methods</dt><dd>Review (subtype unconfirmed)</dd>
+      
+      </dl>
+      </article><article class="paper" data-i="121" data-direct-mechanisms="10" data-all-mechanisms="10 18" data-legacy-mechanisms="10 18" data-direct-groups="1" data-all-groups="1" data-legacy-groups="1" data-keyword="1" data-archive="0" data-type="journalArticle" hidden>
+      <div class="paper-top"><span class="status pending">Needs review (includes keyword-only matches)</span><span class="muted">Source cited in current map claims</span></div>
+      
+      <dl><dt>Mechanism assignment (direct basis)</dt><dd>Synaptic plasticity, networks and EEG</dd><dt>Mechanism assignment (needs review)</dt><dd>Phenotypes, course, remission and interventions</dd>
+      <dt>Study design and methods</dt><dd>Review (subtype unconfirmed)</dd>
+      
+      </dl>
+      </article><article class="paper" data-i="122" data-direct-mechanisms="10" data-all-mechanisms="9 10" data-legacy-mechanisms="9 10" data-direct-groups="1" data-all-groups="1" data-legacy-groups="1" data-keyword="1" data-archive="0" data-type="journalArticle" hidden>
+      <div class="paper-top"><span class="status pending">Needs review (includes keyword-only matches)</span><span class="muted">Source cited in current map claims</span></div>
+      
+      <dl><dt>Mechanism assignment (direct basis)</dt><dd>Synaptic plasticity, networks and EEG</dd><dt>Mechanism assignment (needs review)</dt><dd>Neurotransmitters, receptors and ion channels</dd>
+      <dt>Study design and methods</dt><dd>Review (subtype unconfirmed)</dd>
+      
+      </dl>
+      </article><article class="paper" data-i="123" data-direct-mechanisms="10" data-all-mechanisms="3 10" data-legacy-mechanisms="3 10" data-direct-groups="1" data-all-groups="1" data-legacy-groups="1" data-keyword="1" data-archive="0" data-type="journalArticle" hidden>
+      <div class="paper-top"><span class="status pending">Needs review (includes keyword-only matches)</span><span class="muted">Source cited in current map claims</span></div>
+      
+      <dl><dt>Mechanism assignment (direct basis)</dt><dd>Synaptic plasticity, networks and EEG</dd><dt>Mechanism assignment (needs review)</dt><dd>Environment, stress, nutrition and social conditions</dd>
+      <dt>Study design and methods</dt><dd>Review (subtype unconfirmed)</dd>
+      
+      </dl>
+      </article><article class="paper" data-i="124" data-direct-mechanisms="11" data-all-mechanisms="11" data-legacy-mechanisms="11" data-direct-groups="4" data-all-groups="4" data-legacy-groups="4" data-keyword="0" data-archive="0" data-type="journalArticle" hidden>
+      <div class="paper-top"><span class="status ">Direct basis available; awaiting human confirmation</span><span class="muted">Source cited in current map claims</span></div>
+      
+      <dl><dt>Mechanism assignment (direct basis)</dt><dd>Energy metabolism, mitochondria and redox</dd>
+      <dt>Study design and methods</dt><dd>Case-control study; Cross-sectional study</dd>
+      
+      </dl>
+      </article><article class="paper" data-i="125" data-direct-mechanisms="11" data-all-mechanisms="6 11 12" data-legacy-mechanisms="6 11 12" data-direct-groups="4" data-all-groups="4" data-legacy-groups="4" data-keyword="1" data-archive="0" data-type="journalArticle" hidden>
+      <div class="paper-top"><span class="status pending">Needs review (includes keyword-only matches)</span><span class="muted">Source cited in current map claims</span></div>
+      
+      <dl><dt>Mechanism assignment (direct basis)</dt><dd>Energy metabolism, mitochondria and redox</dd><dt>Mechanism assignment (needs review)</dt><dd>Immunity, microglia, astrocytes and kynurenine; Proteostasis, autophagy, lysosomes and neurodegeneration</dd>
+      <dt>Study design and methods</dt><dd>Case-control study; Cross-sectional study</dd>
+      
+      </dl>
+      </article><article class="paper" data-i="126" data-direct-mechanisms="11" data-all-mechanisms="11" data-legacy-mechanisms="11" data-direct-groups="2" data-all-groups="2" data-legacy-groups="2" data-keyword="0" data-archive="0" data-type="journalArticle" hidden>
+      <div class="paper-top"><span class="status ">Direct basis available; awaiting human confirmation</span><span class="muted">Source cited in current map claims</span></div>
+      
+      <dl><dt>Mechanism assignment (direct basis)</dt><dd>Energy metabolism, mitochondria and redox</dd>
+      <dt>Study design and methods</dt><dd>Randomized controlled trial</dd>
+      
+      </dl>
+      </article><article class="paper" data-i="127" data-direct-mechanisms="12" data-all-mechanisms="3 12" data-legacy-mechanisms="3 12" data-direct-groups="1" data-all-groups="1" data-legacy-groups="1" data-keyword="1" data-archive="0" data-type="journalArticle" hidden>
+      <div class="paper-top"><span class="status pending">Needs review (includes keyword-only matches)</span><span class="muted">Source cited in current map claims</span></div>
+      
+      <dl><dt>Mechanism assignment (direct basis)</dt><dd>Proteostasis, autophagy, lysosomes and neurodegeneration</dd><dt>Mechanism assignment (needs review)</dt><dd>Environment, stress, nutrition and social conditions</dd>
+      <dt>Study design and methods</dt><dd>Review (subtype unconfirmed)</dd>
+      
+      </dl>
+      </article><article class="paper" data-i="128" data-direct-mechanisms="12" data-all-mechanisms="12" data-legacy-mechanisms="12" data-direct-groups="7" data-all-groups="7" data-legacy-groups="7" data-keyword="0" data-archive="0" data-type="journalArticle" hidden>
+      <div class="paper-top"><span class="status ">Direct basis available; awaiting human confirmation</span><span class="muted">Source cited in current map claims</span></div>
+      
+      <dl><dt>Mechanism assignment (direct basis)</dt><dd>Proteostasis, autophagy, lysosomes and neurodegeneration</dd>
+      <dt>Study design and methods</dt><dd>Methods guideline or tutorial</dd>
+      
+      </dl>
+      </article><article class="paper" data-i="129" data-direct-mechanisms="12" data-all-mechanisms="12" data-legacy-mechanisms="12" data-direct-groups="1" data-all-groups="1" data-legacy-groups="1" data-keyword="0" data-archive="0" data-type="journalArticle" hidden>
+      <div class="paper-top"><span class="status ">Direct basis available; awaiting human confirmation</span><span class="muted">Source cited in current map claims</span></div>
+      
+      <dl><dt>Mechanism assignment (direct basis)</dt><dd>Proteostasis, autophagy, lysosomes and neurodegeneration</dd>
+      <dt>Study design and methods</dt><dd>Review (subtype unconfirmed)</dd>
+      
+      </dl>
+      </article><article class="paper" data-i="130" data-direct-mechanisms="12" data-all-mechanisms="10 12" data-legacy-mechanisms="10 12" data-direct-groups="1" data-all-groups="1" data-legacy-groups="1" data-keyword="1" data-archive="0" data-type="journalArticle" hidden>
+      <div class="paper-top"><span class="status pending">Needs review (includes keyword-only matches)</span><span class="muted">Source cited in current map claims</span></div>
+      
+      <dl><dt>Mechanism assignment (direct basis)</dt><dd>Proteostasis, autophagy, lysosomes and neurodegeneration</dd><dt>Mechanism assignment (needs review)</dt><dd>Synaptic plasticity, networks and EEG</dd>
+      <dt>Study design and methods</dt><dd>Review (subtype unconfirmed)</dd>
+      
+      </dl>
+      </article><article class="paper" data-i="131" data-direct-mechanisms="12" data-all-mechanisms="12 18" data-legacy-mechanisms="12 18" data-direct-groups="7" data-all-groups="7" data-legacy-groups="7" data-keyword="1" data-archive="0" data-type="journalArticle" hidden>
+      <div class="paper-top"><span class="status pending">Needs review (includes keyword-only matches)</span><span class="muted">Source cited in current map claims</span></div>
+      
+      <dl><dt>Mechanism assignment (direct basis)</dt><dd>Proteostasis, autophagy, lysosomes and neurodegeneration</dd><dt>Mechanism assignment (needs review)</dt><dd>Phenotypes, course, remission and interventions</dd>
+      <dt>Study design and methods</dt><dd>Diagnostic accuracy study</dd>
+      
+      </dl>
+      </article><article class="paper" data-i="132" data-direct-mechanisms="13" data-all-mechanisms="13" data-legacy-mechanisms="13" data-direct-groups="6" data-all-groups="6" data-legacy-groups="6" data-keyword="0" data-archive="0" data-type="journalArticle" hidden>
+      <div class="paper-top"><span class="status ">Direct basis available; awaiting human confirmation</span><span class="muted">Source cited in current map claims</span></div>
+      
+      <dl><dt>Mechanism assignment (direct basis)</dt><dd>Microenvironment: carbon dioxide, pH, oxygen and electrolytes</dd>
+      <dt>Study design and methods</dt><dd>Animal intervention experiment</dd>
+      
+      </dl>
+      </article><article class="paper" data-i="133" data-direct-mechanisms="13" data-all-mechanisms="13" data-legacy-mechanisms="13" data-direct-groups="7" data-all-groups="3 7" data-legacy-groups="7" data-keyword="0" data-archive="0" data-type="journalArticle" hidden>
+      <div class="paper-top"><span class="status ">Needs review (includes insufficient-information items)</span><span class="muted">Source cited in current map claims</span></div>
+      
+      <dl><dt>Mechanism assignment (direct basis)</dt><dd>Microenvironment: carbon dioxide, pH, oxygen and electrolytes</dd>
+      <dt>Study design and methods</dt><dd>Method validation or replication study<br><span class="muted">Requires verification: Human experiment (randomization unconfirmed)</span></dd>
+      
+      </dl>
+      </article><article class="paper" data-i="134" data-direct-mechanisms="13 14" data-all-mechanisms="13 14" data-legacy-mechanisms="13 14" data-direct-groups="1" data-all-groups="1" data-legacy-groups="1" data-keyword="0" data-archive="0" data-type="journalArticle" hidden>
+      <div class="paper-top"><span class="status ">Direct basis available; awaiting human confirmation</span><span class="muted">Source cited in current map claims</span></div>
+      
+      <dl><dt>Mechanism assignment (direct basis)</dt><dd>Microenvironment: carbon dioxide, pH, oxygen and electrolytes; Neurovascular coupling, perfusion and the blood-brain barrier</dd>
+      <dt>Study design and methods</dt><dd>Review (subtype unconfirmed)</dd>
+      
+      </dl>
+      </article><article class="paper" data-i="135" data-direct-mechanisms="13" data-all-mechanisms="13 18" data-legacy-mechanisms="13 18" data-direct-groups="7" data-all-groups="7" data-legacy-groups="7" data-keyword="1" data-archive="0" data-type="journalArticle" hidden>
+      <div class="paper-top"><span class="status pending">Needs review (includes keyword-only matches)</span><span class="muted">Source cited in current map claims</span></div>
+      
+      <dl><dt>Mechanism assignment (direct basis)</dt><dd>Microenvironment: carbon dioxide, pH, oxygen and electrolytes</dd><dt>Mechanism assignment (needs review)</dt><dd>Phenotypes, course, remission and interventions</dd>
+      <dt>Study design and methods</dt><dd>Clinical guideline</dd>
+      
+      </dl>
+      </article><article class="paper" data-i="136" data-direct-mechanisms="14" data-all-mechanisms="3 14" data-legacy-mechanisms="3 14" data-direct-groups="6" data-all-groups="6" data-legacy-groups="6" data-keyword="1" data-archive="0" data-type="journalArticle" hidden>
+      <div class="paper-top"><span class="status pending">Needs review (includes keyword-only matches)</span><span class="muted">Source cited in current map claims</span></div>
+      
+      <dl><dt>Mechanism assignment (direct basis)</dt><dd>Neurovascular coupling, perfusion and the blood-brain barrier</dd><dt>Mechanism assignment (needs review)</dt><dd>Environment, stress, nutrition and social conditions</dd>
+      <dt>Study design and methods</dt><dd>Animal intervention experiment; Human postmortem tissue study; In vitro cell experiment</dd>
+      
+      </dl>
+      </article><article class="paper" data-i="137" data-direct-mechanisms="14" data-all-mechanisms="14 18" data-legacy-mechanisms="14 18" data-direct-groups="1" data-all-groups="1" data-legacy-groups="1" data-keyword="1" data-archive="0" data-type="journalArticle" hidden>
+      <div class="paper-top"><span class="status pending">Needs review (includes keyword-only matches)</span><span class="muted">Source cited in current map claims</span></div>
+      
+      <dl><dt>Mechanism assignment (direct basis)</dt><dd>Neurovascular coupling, perfusion and the blood-brain barrier</dd><dt>Mechanism assignment (needs review)</dt><dd>Phenotypes, course, remission and interventions</dd>
+      <dt>Study design and methods</dt><dd>Review (subtype unconfirmed)</dd>
+      
+      </dl>
+      </article><article class="paper" data-i="138" data-direct-mechanisms="15" data-all-mechanisms="4 15" data-legacy-mechanisms="4 15" data-direct-groups="6" data-all-groups="6" data-legacy-groups="6" data-keyword="1" data-archive="0" data-type="journalArticle" hidden>
+      <div class="paper-top"><span class="status pending">Needs review (includes keyword-only matches)</span><span class="muted">Source cited in current map claims</span></div>
+      
+      <dl><dt>Mechanism assignment (direct basis)</dt><dd>CSF dynamics and glymphatic clearance</dd><dt>Mechanism assignment (needs review)</dt><dd>Sleep and circadian regulation</dd>
+      <dt>Study design and methods</dt><dd>Animal intervention experiment</dd>
+      
+      </dl>
+      </article><article class="paper" data-i="139" data-direct-mechanisms="15" data-all-mechanisms="4 15" data-legacy-mechanisms="4 15" data-direct-groups="6" data-all-groups="6" data-legacy-groups="6" data-keyword="1" data-archive="0" data-type="journalArticle" hidden>
+      <div class="paper-top"><span class="status pending">Needs review (includes keyword-only matches)</span><span class="muted">Source cited in current map claims</span></div>
+      
+      <dl><dt>Mechanism assignment (direct basis)</dt><dd>CSF dynamics and glymphatic clearance</dd><dt>Mechanism assignment (needs review)</dt><dd>Sleep and circadian regulation</dd>
+      <dt>Study design and methods</dt><dd>Animal intervention experiment</dd>
+      
+      </dl>
+      </article><article class="paper" data-i="140" data-direct-mechanisms="15" data-all-mechanisms="15" data-legacy-mechanisms="15" data-direct-groups="7" data-all-groups="7" data-legacy-groups="7" data-keyword="0" data-archive="0" data-type="journalArticle" hidden>
+      <div class="paper-top"><span class="status ">Direct basis available; awaiting human confirmation</span><span class="muted">Source cited in current map claims</span></div>
+      
+      <dl><dt>Mechanism assignment (direct basis)</dt><dd>CSF dynamics and glymphatic clearance</dd>
+      <dt>Study design and methods</dt><dd>Commentary or response</dd>
+      
+      </dl>
+      </article><article class="paper" data-i="141" data-direct-mechanisms="15" data-all-mechanisms="15" data-legacy-mechanisms="15" data-direct-groups="7" data-all-groups="7" data-legacy-groups="7" data-keyword="0" data-archive="0" data-type="journalArticle" hidden>
+      <div class="paper-top"><span class="status ">Direct basis available; awaiting human confirmation</span><span class="muted">Source cited in current map claims</span></div>
+      
+      <dl><dt>Mechanism assignment (direct basis)</dt><dd>CSF dynamics and glymphatic clearance</dd>
+      <dt>Study design and methods</dt><dd>Commentary or response</dd>
+      
+      </dl>
+      </article><article class="paper" data-i="142" data-direct-mechanisms="15" data-all-mechanisms="4 15 19" data-legacy-mechanisms="4 15 19" data-direct-groups="1 7" data-all-groups="1 7" data-legacy-groups="1 7" data-keyword="1" data-archive="0" data-type="journalArticle" hidden>
+      <div class="paper-top"><span class="status pending">Needs review (includes keyword-only matches)</span><span class="muted">Source cited in current map claims</span></div>
+      
+      <dl><dt>Mechanism assignment (direct basis)</dt><dd>CSF dynamics and glymphatic clearance</dd><dt>Mechanism assignment (needs review)</dt><dd>Sleep and circadian regulation; Measurement methods, biomarkers and competing causal models</dd>
+      <dt>Study design and methods</dt><dd>Methodological review</dd>
+      
+      </dl>
+      </article><article class="paper" data-i="143" data-direct-mechanisms="15" data-all-mechanisms="4 10 15" data-legacy-mechanisms="4 10 15" data-direct-groups="4" data-all-groups="4" data-legacy-groups="4" data-keyword="1" data-archive="0" data-type="journalArticle" hidden>
+      <div class="paper-top"><span class="status pending">Needs review (includes keyword-only matches)</span><span class="muted">Source cited in current map claims</span></div>
+      
+      <dl><dt>Mechanism assignment (direct basis)</dt><dd>CSF dynamics and glymphatic clearance</dd><dt>Mechanism assignment (needs review)</dt><dd>Sleep and circadian regulation; Synaptic plasticity, networks and EEG</dd>
+      <dt>Study design and methods</dt><dd>Human observational study (specific design requires review)</dd>
+      
+      </dl>
+      </article><article class="paper" data-i="144" data-direct-mechanisms="15" data-all-mechanisms="4 15" data-legacy-mechanisms="4 15" data-direct-groups="6" data-all-groups="6" data-legacy-groups="6" data-keyword="1" data-archive="0" data-type="journalArticle" hidden>
+      <div class="paper-top"><span class="status pending">Needs review (includes keyword-only matches)</span><span class="muted">Source cited in current map claims</span></div>
+      
+      <dl><dt>Mechanism assignment (direct basis)</dt><dd>CSF dynamics and glymphatic clearance</dd><dt>Mechanism assignment (needs review)</dt><dd>Sleep and circadian regulation</dd>
+      <dt>Study design and methods</dt><dd>Animal intervention experiment</dd>
+      
+      </dl>
+      </article><article class="paper" data-i="145" data-direct-mechanisms="16" data-all-mechanisms="16" data-legacy-mechanisms="16" data-direct-groups="4" data-all-groups="4" data-legacy-groups="4" data-keyword="0" data-archive="0" data-type="journalArticle" hidden>
+      <div class="paper-top"><span class="status ">Direct basis available; awaiting human confirmation</span><span class="muted">Source cited in current map claims</span></div>
+      
+      <dl><dt>Mechanism assignment (direct basis)</dt><dd>Microbiome and the gut-brain axis</dd>
+      <dt>Study design and methods</dt><dd>Human observational study (specific design requires review)</dd>
+      
+      </dl>
+      </article><article class="paper" data-i="146" data-direct-mechanisms="16" data-all-mechanisms="16" data-legacy-mechanisms="16" data-direct-groups="6" data-all-groups="6" data-legacy-groups="6" data-keyword="0" data-archive="0" data-type="journalArticle" hidden>
+      <div class="paper-top"><span class="status ">Direct basis available; awaiting human confirmation</span><span class="muted">Source cited in current map claims</span></div>
+      
+      <dl><dt>Mechanism assignment (direct basis)</dt><dd>Microbiome and the gut-brain axis</dd>
+      <dt>Study design and methods</dt><dd>Animal intervention experiment; Microbiota transfer experiment</dd>
+      
+      </dl>
+      </article><article class="paper" data-i="147" data-direct-mechanisms="16" data-all-mechanisms="16 18" data-legacy-mechanisms="16 18" data-direct-groups="2" data-all-groups="2" data-legacy-groups="2" data-keyword="1" data-archive="0" data-type="journalArticle" hidden>
+      <div class="paper-top"><span class="status pending">Needs review (includes keyword-only matches)</span><span class="muted">Source cited in current map claims</span></div>
+      
+      <dl><dt>Mechanism assignment (direct basis)</dt><dd>Microbiome and the gut-brain axis</dd><dt>Mechanism assignment (needs review)</dt><dd>Phenotypes, course, remission and interventions</dd>
+      <dt>Study design and methods</dt><dd>Randomized controlled trial</dd>
+      
+      </dl>
+      </article><article class="paper" data-i="148" data-direct-mechanisms="16" data-all-mechanisms="9 16" data-legacy-mechanisms="9 16" data-direct-groups="1" data-all-groups="1" data-legacy-groups="1" data-keyword="1" data-archive="0" data-type="journalArticle" hidden>
+      <div class="paper-top"><span class="status pending">Needs review (includes keyword-only matches)</span><span class="muted">Source cited in current map claims</span></div>
+      
+      <dl><dt>Mechanism assignment (direct basis)</dt><dd>Microbiome and the gut-brain axis</dd><dt>Mechanism assignment (needs review)</dt><dd>Neurotransmitters, receptors and ion channels</dd>
+      <dt>Study design and methods</dt><dd>Review (subtype unconfirmed)</dd>
+      
+      </dl>
+      </article><article class="paper" data-i="149" data-direct-mechanisms="16" data-all-mechanisms="16" data-legacy-mechanisms="16" data-direct-groups="1" data-all-groups="1" data-legacy-groups="1" data-keyword="0" data-archive="0" data-type="journalArticle" hidden>
+      <div class="paper-top"><span class="status ">Direct basis available; awaiting human confirmation</span><span class="muted">Source cited in current map claims</span></div>
+      
+      <dl><dt>Mechanism assignment (direct basis)</dt><dd>Microbiome and the gut-brain axis</dd>
+      <dt>Study design and methods</dt><dd>Review (subtype unconfirmed)</dd>
+      
+      </dl>
+      </article><article class="paper" data-i="150" data-direct-mechanisms="17" data-all-mechanisms="17" data-legacy-mechanisms="17" data-direct-groups="2" data-all-groups="2" data-legacy-groups="2" data-keyword="0" data-archive="0" data-type="journalArticle" hidden>
+      <div class="paper-top"><span class="status ">Direct basis available; awaiting human confirmation</span><span class="muted">Source cited in current map claims</span></div>
+      
+      <dl><dt>Mechanism assignment (direct basis)</dt><dd>Pharmacological, toxic and iatrogenic mechanisms</dd>
+      <dt>Study design and methods</dt><dd>Crossover intervention trial; Randomized controlled trial</dd>
+      
+      </dl>
+      </article><article class="paper" data-i="151" data-direct-mechanisms="17" data-all-mechanisms="17" data-legacy-mechanisms="17" data-direct-groups="4" data-all-groups="4" data-legacy-groups="4" data-keyword="0" data-archive="0" data-type="journalArticle" hidden>
+      <div class="paper-top"><span class="status ">Direct basis available; awaiting human confirmation</span><span class="muted">Source cited in current map claims</span></div>
+      
+      <dl><dt>Mechanism assignment (direct basis)</dt><dd>Pharmacological, toxic and iatrogenic mechanisms</dd>
+      <dt>Study design and methods</dt><dd>Case-control study</dd>
+      
+      </dl>
+      </article><article class="paper" data-i="152" data-direct-mechanisms="17" data-all-mechanisms="17" data-legacy-mechanisms="17" data-direct-groups="1" data-all-groups="1" data-legacy-groups="1" data-keyword="0" data-archive="0" data-type="journalArticle" hidden>
+      <div class="paper-top"><span class="status ">Direct basis available; awaiting human confirmation</span><span class="muted">Source cited in current map claims</span></div>
+      
+      <dl><dt>Mechanism assignment (direct basis)</dt><dd>Pharmacological, toxic and iatrogenic mechanisms</dd>
+      <dt>Study design and methods</dt><dd>Review (subtype unconfirmed)</dd>
+      
+      </dl>
+      </article><article class="paper" data-i="153" data-direct-mechanisms="17" data-all-mechanisms="17 18" data-legacy-mechanisms="17 18" data-direct-groups="1" data-all-groups="1" data-legacy-groups="1" data-keyword="1" data-archive="0" data-type="journalArticle" hidden>
+      <div class="paper-top"><span class="status pending">Needs review (includes keyword-only matches)</span><span class="muted">Source cited in current map claims</span></div>
+      
+      <dl><dt>Mechanism assignment (direct basis)</dt><dd>Pharmacological, toxic and iatrogenic mechanisms</dd><dt>Mechanism assignment (needs review)</dt><dd>Phenotypes, course, remission and interventions</dd>
+      <dt>Study design and methods</dt><dd>Meta-analysis; Systematic review</dd>
+      
+      </dl>
+      </article><article class="paper" data-i="154" data-direct-mechanisms="18" data-all-mechanisms="18" data-legacy-mechanisms="18" data-direct-groups="1" data-all-groups="1" data-legacy-groups="1" data-keyword="0" data-archive="0" data-type="journalArticle" hidden>
+      <div class="paper-top"><span class="status ">Direct basis available; awaiting human confirmation</span><span class="muted">Source cited in current map claims</span></div>
+      
+      <dl><dt>Mechanism assignment (direct basis)</dt><dd>Phenotypes, course, remission and interventions</dd>
+      <dt>Study design and methods</dt><dd>Meta-analysis</dd>
+      
+      </dl>
+      </article><article class="paper" data-i="155" data-direct-mechanisms="18" data-all-mechanisms="18" data-legacy-mechanisms="18" data-direct-groups="1" data-all-groups="1" data-legacy-groups="1" data-keyword="0" data-archive="0" data-type="journalArticle" hidden>
+      <div class="paper-top"><span class="status ">Direct basis available; awaiting human confirmation</span><span class="muted">Source cited in current map claims</span></div>
+      
+      <dl><dt>Mechanism assignment (direct basis)</dt><dd>Phenotypes, course, remission and interventions</dd>
+      <dt>Study design and methods</dt><dd>Meta-analysis; Systematic review</dd>
+      
+      </dl>
+      </article><article class="paper" data-i="156" data-direct-mechanisms="18" data-all-mechanisms="6 18" data-legacy-mechanisms="6 18" data-direct-groups="1" data-all-groups="1" data-legacy-groups="1" data-keyword="1" data-archive="0" data-type="journalArticle" hidden>
+      <div class="paper-top"><span class="status pending">Needs review (includes keyword-only matches)</span><span class="muted">Source cited in current map claims</span></div>
+      
+      <dl><dt>Mechanism assignment (direct basis)</dt><dd>Phenotypes, course, remission and interventions</dd><dt>Mechanism assignment (needs review)</dt><dd>Immunity, microglia, astrocytes and kynurenine</dd>
+      <dt>Study design and methods</dt><dd>Meta-analysis</dd>
+      
+      </dl>
+      </article><article class="paper" data-i="157" data-direct-mechanisms="18" data-all-mechanisms="18" data-legacy-mechanisms="18" data-direct-groups="7" data-all-groups="7" data-legacy-groups="7" data-keyword="0" data-archive="0" data-type="journalArticle" hidden>
+      <div class="paper-top"><span class="status ">Direct basis available; awaiting human confirmation</span><span class="muted">Source cited in current map claims</span></div>
+      
+      <dl><dt>Mechanism assignment (direct basis)</dt><dd>Phenotypes, course, remission and interventions</dd>
+      <dt>Study design and methods</dt><dd>Conceptual or theoretical framework</dd>
+      
+      </dl>
+      </article><article class="paper" data-i="158" data-direct-mechanisms="19" data-all-mechanisms="19" data-legacy-mechanisms="19" data-direct-groups="6 7" data-all-groups="6 7" data-legacy-groups="6 7" data-keyword="0" data-archive="0" data-type="journalArticle" hidden>
+      <div class="paper-top"><span class="status ">Direct basis available; awaiting human confirmation</span><span class="muted">Source cited in current map claims</span></div>
+      
+      <dl><dt>Mechanism assignment (direct basis)</dt><dd>Measurement methods, biomarkers and competing causal models</dd>
+      <dt>Study design and methods</dt><dd>Animal intervention experiment; Method validation or replication study</dd>
+      
+      </dl>
+      </article><article class="paper" data-i="159" data-direct-mechanisms="19" data-all-mechanisms="14 19" data-legacy-mechanisms="14 19" data-direct-groups="7" data-all-groups="7" data-legacy-groups="7" data-keyword="1" data-archive="0" data-type="journalArticle" hidden>
+      <div class="paper-top"><span class="status pending">Needs review (includes keyword-only matches)</span><span class="muted">Source cited in current map claims</span></div>
+      
+      <dl><dt>Mechanism assignment (direct basis)</dt><dd>Measurement methods, biomarkers and competing causal models</dd><dt>Mechanism assignment (needs review)</dt><dd>Neurovascular coupling, perfusion and the blood-brain barrier</dd>
+      <dt>Study design and methods</dt><dd>Clinical or methodological consensus; Methods guideline or tutorial</dd>
+      
+      </dl>
+      </article><article class="paper" data-i="160" data-direct-mechanisms="19" data-all-mechanisms="19" data-legacy-mechanisms="19" data-direct-groups="1 7" data-all-groups="1 7" data-legacy-groups="1 7" data-keyword="0" data-archive="0" data-type="journalArticle" hidden>
+      <div class="paper-top"><span class="status ">Direct basis available; awaiting human confirmation</span><span class="muted">Source cited in current map claims</span></div>
+      
+      <dl><dt>Mechanism assignment (direct basis)</dt><dd>Measurement methods, biomarkers and competing causal models</dd>
+      <dt>Study design and methods</dt><dd>Clinical or methodological consensus; Methods guideline or tutorial; Review (subtype unconfirmed)</dd>
+      
+      </dl>
+      </article><article class="paper" data-i="161" data-direct-mechanisms="19" data-all-mechanisms="19" data-legacy-mechanisms="19" data-direct-groups="1" data-all-groups="1" data-legacy-groups="1" data-keyword="0" data-archive="0" data-type="journalArticle" hidden>
+      <div class="paper-top"><span class="status ">Direct basis available; awaiting human confirmation</span><span class="muted">Source cited in current map claims</span></div>
+      
+      <dl><dt>Mechanism assignment (direct basis)</dt><dd>Measurement methods, biomarkers and competing causal models</dd>
+      <dt>Study design and methods</dt><dd>Review (subtype unconfirmed)</dd>
+      
+      </dl>
+      </article><article class="paper" data-i="162" data-direct-mechanisms="19" data-all-mechanisms="6 19" data-legacy-mechanisms="6 19" data-direct-groups="6" data-all-groups="6" data-legacy-groups="6" data-keyword="1" data-archive="0" data-type="journalArticle" hidden>
+      <div class="paper-top"><span class="status pending">Needs review (includes keyword-only matches)</span><span class="muted">Source cited in current map claims</span></div>
+      
+      <dl><dt>Mechanism assignment (direct basis)</dt><dd>Measurement methods, biomarkers and competing causal models</dd><dt>Mechanism assignment (needs review)</dt><dd>Immunity, microglia, astrocytes and kynurenine</dd>
+      <dt>Study design and methods</dt><dd>Ex vivo tissue study; Human postmortem tissue study</dd>
+      
+      </dl>
+      </article><article class="paper" data-i="163" data-direct-mechanisms="19" data-all-mechanisms="19" data-legacy-mechanisms="19" data-direct-groups="4 7" data-all-groups="4 7" data-legacy-groups="4 7" data-keyword="0" data-archive="0" data-type="journalArticle" hidden>
+      <div class="paper-top"><span class="status ">Direct basis available; awaiting human confirmation</span><span class="muted">Source cited in current map claims</span></div>
+      
+      <dl><dt>Mechanism assignment (direct basis)</dt><dd>Measurement methods, biomarkers and competing causal models</dd>
+      <dt>Study design and methods</dt><dd>Method validation or replication study; Secondary analysis of existing data</dd>
+      
+      </dl>
+      </article><article class="paper" data-i="164" data-direct-mechanisms="19" data-all-mechanisms="19" data-legacy-mechanisms="19" data-direct-groups="7" data-all-groups="7" data-legacy-groups="7" data-keyword="0" data-archive="0" data-type="journalArticle" hidden>
+      <div class="paper-top"><span class="status ">Direct basis available; awaiting human confirmation</span><span class="muted">Source cited in current map claims</span></div>
+      
+      <dl><dt>Mechanism assignment (direct basis)</dt><dd>Measurement methods, biomarkers and competing causal models</dd>
+      <dt>Study design and methods</dt><dd>Methods guideline or tutorial</dd>
+      
+      </dl>
+      </article><article class="paper" data-i="165" data-direct-mechanisms="6" data-all-mechanisms="6" data-legacy-mechanisms="6" data-direct-groups="4 6" data-all-groups="4 6" data-legacy-groups="4 6" data-keyword="0" data-archive="0" data-type="journalArticle" hidden>
+      <div class="paper-top"><span class="status ">Direct basis available; awaiting human confirmation</span><span class="muted">Source cited in current map claims</span></div>
+      
+      <dl><dt>Mechanism assignment (direct basis)</dt><dd>Immunity, microglia, astrocytes and kynurenine</dd>
+      <dt>Study design and methods</dt><dd>Animal tissue study; Gene expression or transcriptomic analysis</dd>
+      
+      </dl>
+      </article><article class="paper" data-i="166" data-direct-mechanisms="19" data-all-mechanisms="1 19" data-legacy-mechanisms="1 19" data-direct-groups="1" data-all-groups="1 4" data-legacy-groups="1" data-keyword="1" data-archive="0" data-type="journalArticle" hidden>
+      <div class="paper-top"><span class="status pending">Needs review (includes keyword-only matches)</span><span class="muted">Source cited in current map claims</span></div>
+      
+      <dl><dt>Mechanism assignment (direct basis)</dt><dd>Measurement methods, biomarkers and competing causal models</dd><dt>Mechanism assignment (needs review)</dt><dd>Genetics, epigenetics and gene-environment interaction</dd>
+      <dt>Study design and methods</dt><dd>Meta-analysis<br><span class="muted">Requires verification: Case-control study</span></dd>
+      
+      </dl>
+      </article><article class="paper" data-i="167" data-direct-mechanisms="11" data-all-mechanisms="11" data-legacy-mechanisms="11" data-direct-groups="4" data-all-groups="4" data-legacy-groups="4" data-keyword="0" data-archive="0" data-type="journalArticle" hidden>
+      <div class="paper-top"><span class="status ">Direct basis available; awaiting human confirmation</span><span class="muted">Source cited in current map claims</span></div>
+      
+      <dl><dt>Mechanism assignment (direct basis)</dt><dd>Energy metabolism, mitochondria and redox</dd>
+      <dt>Study design and methods</dt><dd>Longitudinal or repeated-measures study</dd>
+      
+      </dl>
+      </article><article class="paper" data-i="168" data-direct-mechanisms="" data-all-mechanisms="1" data-legacy-mechanisms="1" data-direct-groups="1" data-all-groups="1" data-legacy-groups="1" data-keyword="1" data-archive="1" data-type="journalArticle" hidden>
+      <div class="paper-top"><span class="status pending">Needs review (includes keyword-only matches)</span><span class="muted">Historical / methods archive</span></div>
+      
+      <dl><dt>Mechanism assignment (direct basis)</dt><dd>No direct assignment basis available</dd><dt>Mechanism assignment (needs review)</dt><dd>Genetics, epigenetics and gene-environment interaction</dd>
+      <dt>Study design and methods</dt><dd>Review (subtype unconfirmed)</dd>
+      
+      </dl>
+      </article><article class="paper" data-i="169" data-direct-mechanisms="" data-all-mechanisms="" data-legacy-mechanisms="" data-direct-groups="1" data-all-groups="1" data-legacy-groups="1" data-keyword="0" data-archive="1" data-type="journalArticle" hidden>
+      <div class="paper-top"><span class="status ">Direct basis available; awaiting human confirmation</span><span class="muted">Historical / methods archive</span></div>
+      
+      <dl><dt>Mechanism assignment (direct basis)</dt><dd>No direct assignment basis available</dd>
+      <dt>Study design and methods</dt><dd>Review (subtype unconfirmed)</dd>
+      
+      </dl>
+      </article><article class="paper" data-i="170" data-direct-mechanisms="" data-all-mechanisms="1" data-legacy-mechanisms="1" data-direct-groups="4" data-all-groups="4" data-legacy-groups="4" data-keyword="1" data-archive="1" data-type="journalArticle" hidden>
+      <div class="paper-top"><span class="status pending">Needs review (includes keyword-only matches)</span><span class="muted">Historical / methods archive</span></div>
+      
+      <dl><dt>Mechanism assignment (direct basis)</dt><dd>No direct assignment basis available</dd><dt>Mechanism assignment (needs review)</dt><dd>Genetics, epigenetics and gene-environment interaction</dd>
+      <dt>Study design and methods</dt><dd>Genome-wide association study</dd>
+      
+      </dl>
+      </article><article class="paper" data-i="171" data-direct-mechanisms="" data-all-mechanisms="1" data-legacy-mechanisms="1" data-direct-groups="4" data-all-groups="4" data-legacy-groups="4" data-keyword="1" data-archive="1" data-type="journalArticle" hidden>
+      <div class="paper-top"><span class="status pending">Needs review (includes keyword-only matches)</span><span class="muted">Historical / methods archive</span></div>
+      
+      <dl><dt>Mechanism assignment (direct basis)</dt><dd>No direct assignment basis available</dd><dt>Mechanism assignment (needs review)</dt><dd>Genetics, epigenetics and gene-environment interaction</dd>
+      <dt>Study design and methods</dt><dd>Genome-wide association study</dd>
+      
+      </dl>
+      </article><article class="paper" data-i="172" data-direct-mechanisms="" data-all-mechanisms="3" data-legacy-mechanisms="3" data-direct-groups="1" data-all-groups="1" data-legacy-groups="1" data-keyword="1" data-archive="1" data-type="journalArticle" hidden>
+      <div class="paper-top"><span class="status pending">Needs review (includes keyword-only matches)</span><span class="muted">Historical / methods archive</span></div>
+      
+      <dl><dt>Mechanism assignment (direct basis)</dt><dd>No direct assignment basis available</dd><dt>Mechanism assignment (needs review)</dt><dd>Environment, stress, nutrition and social conditions</dd>
+      <dt>Study design and methods</dt><dd>Review (subtype unconfirmed)</dd>
+      
+      </dl>
+      </article><article class="paper" data-i="173" data-direct-mechanisms="" data-all-mechanisms="4" data-legacy-mechanisms="4" data-direct-groups="1" data-all-groups="1" data-legacy-groups="1" data-keyword="1" data-archive="1" data-type="journalArticle" hidden>
+      <div class="paper-top"><span class="status pending">Needs review (includes keyword-only matches)</span><span class="muted">Historical / methods archive</span></div>
+      
+      <dl><dt>Mechanism assignment (direct basis)</dt><dd>No direct assignment basis available</dd><dt>Mechanism assignment (needs review)</dt><dd>Sleep and circadian regulation</dd>
+      <dt>Study design and methods</dt><dd>Meta-analysis</dd>
+      
+      </dl>
+      </article><article class="paper" data-i="174" data-direct-mechanisms="" data-all-mechanisms="" data-legacy-mechanisms="" data-direct-groups="7" data-all-groups="7" data-legacy-groups="7" data-keyword="0" data-archive="1" data-type="journalArticle" hidden>
+      <div class="paper-top"><span class="status ">Direct basis available; awaiting human confirmation</span><span class="muted">Historical / methods archive</span></div>
+      
+      <dl><dt>Mechanism assignment (direct basis)</dt><dd>No direct assignment basis available</dd>
+      <dt>Study design and methods</dt><dd>Commission report</dd>
+      
+      </dl>
+      </article><article class="paper" data-i="175" data-direct-mechanisms="" data-all-mechanisms="3 18" data-legacy-mechanisms="3 18" data-direct-groups="" data-all-groups="1" data-legacy-groups="" data-keyword="1" data-archive="1" data-type="journalArticle" hidden>
+      <div class="paper-top"><span class="status pending">Needs review (includes keyword-only matches)</span><span class="muted">Historical / methods archive</span></div>
+      
+      <dl><dt>Mechanism assignment (direct basis)</dt><dd>No direct assignment basis available</dd><dt>Mechanism assignment (needs review)</dt><dd>Environment, stress, nutrition and social conditions; Phenotypes, course, remission and interventions</dd>
+      <dt>Study design and methods</dt><dd>No method suggestion with a direct basis<br><span class="muted">Requires verification: Review (subtype unconfirmed)</span></dd>
+      
+      </dl>
+      </article><article class="paper" data-i="176" data-direct-mechanisms="" data-all-mechanisms="6 18" data-legacy-mechanisms="6 18" data-direct-groups="1" data-all-groups="1" data-legacy-groups="1" data-keyword="1" data-archive="1" data-type="journalArticle" hidden>
+      <div class="paper-top"><span class="status pending">Needs review (includes keyword-only matches)</span><span class="muted">Historical / methods archive</span></div>
+      
+      <dl><dt>Mechanism assignment (direct basis)</dt><dd>No direct assignment basis available</dd><dt>Mechanism assignment (needs review)</dt><dd>Immunity, microglia, astrocytes and kynurenine; Phenotypes, course, remission and interventions</dd>
+      <dt>Study design and methods</dt><dd>Review (subtype unconfirmed)</dd>
+      
+      </dl>
+      </article><article class="paper" data-i="177" data-direct-mechanisms="" data-all-mechanisms="8" data-legacy-mechanisms="8" data-direct-groups="1" data-all-groups="1" data-legacy-groups="1" data-keyword="1" data-archive="1" data-type="journalArticle" hidden>
+      <div class="paper-top"><span class="status pending">Needs review (includes keyword-only matches)</span><span class="muted">Historical / methods archive</span></div>
+      
+      <dl><dt>Mechanism assignment (direct basis)</dt><dd>No direct assignment basis available</dd><dt>Mechanism assignment (needs review)</dt><dd>Neuroinfections and postinfectious autoimmunity</dd>
+      <dt>Study design and methods</dt><dd>Review (subtype unconfirmed)</dd>
+      
+      </dl>
+      </article><article class="paper" data-i="178" data-direct-mechanisms="" data-all-mechanisms="6" data-legacy-mechanisms="6" data-direct-groups="1" data-all-groups="1" data-legacy-groups="1" data-keyword="1" data-archive="1" data-type="journalArticle" hidden>
+      <div class="paper-top"><span class="status pending">Needs review (includes keyword-only matches)</span><span class="muted">Historical / methods archive</span></div>
+      
+      <dl><dt>Mechanism assignment (direct basis)</dt><dd>No direct assignment basis available</dd><dt>Mechanism assignment (needs review)</dt><dd>Immunity, microglia, astrocytes and kynurenine</dd>
+      <dt>Study design and methods</dt><dd>Review (subtype unconfirmed)</dd>
+      
+      </dl>
+      </article><article class="paper" data-i="179" data-direct-mechanisms="" data-all-mechanisms="6 9" data-legacy-mechanisms="6 9" data-direct-groups="1" data-all-groups="1" data-legacy-groups="1" data-keyword="1" data-archive="1" data-type="journalArticle" hidden>
+      <div class="paper-top"><span class="status pending">Needs review (includes keyword-only matches)</span><span class="muted">Historical / methods archive</span></div>
+      
+      <dl><dt>Mechanism assignment (direct basis)</dt><dd>No direct assignment basis available</dd><dt>Mechanism assignment (needs review)</dt><dd>Immunity, microglia, astrocytes and kynurenine; Neurotransmitters, receptors and ion channels</dd>
+      <dt>Study design and methods</dt><dd>Review (subtype unconfirmed)</dd>
+      
+      </dl>
+      </article><article class="paper" data-i="180" data-direct-mechanisms="" data-all-mechanisms="6" data-legacy-mechanisms="6" data-direct-groups="1" data-all-groups="1" data-legacy-groups="1" data-keyword="1" data-archive="1" data-type="journalArticle" hidden>
+      <div class="paper-top"><span class="status pending">Needs review (includes keyword-only matches)</span><span class="muted">Historical / methods archive</span></div>
+      
+      <dl><dt>Mechanism assignment (direct basis)</dt><dd>No direct assignment basis available</dd><dt>Mechanism assignment (needs review)</dt><dd>Immunity, microglia, astrocytes and kynurenine</dd>
+      <dt>Study design and methods</dt><dd>Review (subtype unconfirmed)</dd>
+      
+      </dl>
+      </article><article class="paper" data-i="181" data-direct-mechanisms="" data-all-mechanisms="2 10" data-legacy-mechanisms="2 10" data-direct-groups="1" data-all-groups="1" data-legacy-groups="1" data-keyword="1" data-archive="1" data-type="journalArticle" hidden>
+      <div class="paper-top"><span class="status pending">Needs review (includes keyword-only matches)</span><span class="muted">Historical / methods archive</span></div>
+      
+      <dl><dt>Mechanism assignment (direct basis)</dt><dd>No direct assignment basis available</dd><dt>Mechanism assignment (needs review)</dt><dd>Neurodevelopment, critical periods and synaptic pruning; Synaptic plasticity, networks and EEG</dd>
+      <dt>Study design and methods</dt><dd>Review (subtype unconfirmed)</dd>
+      
+      </dl>
+      </article><article class="paper" data-i="182" data-direct-mechanisms="" data-all-mechanisms="" data-legacy-mechanisms="" data-direct-groups="7" data-all-groups="7" data-legacy-groups="7" data-keyword="0" data-archive="1" data-type="journalArticle" hidden>
+      <div class="paper-top"><span class="status ">Direct basis available; awaiting human confirmation</span><span class="muted">Historical / methods archive</span></div>
+      
+      <dl><dt>Mechanism assignment (direct basis)</dt><dd>No direct assignment basis available</dd>
+      <dt>Study design and methods</dt><dd>Clinical guideline</dd>
+      
+      </dl>
+      </article><article class="paper" data-i="183" data-direct-mechanisms="" data-all-mechanisms="18" data-legacy-mechanisms="18" data-direct-groups="1" data-all-groups="1" data-legacy-groups="1" data-keyword="1" data-archive="1" data-type="journalArticle" hidden>
+      <div class="paper-top"><span class="status pending">Needs review (includes keyword-only matches)</span><span class="muted">Historical / methods archive</span></div>
+      
+      <dl><dt>Mechanism assignment (direct basis)</dt><dd>No direct assignment basis available</dd><dt>Mechanism assignment (needs review)</dt><dd>Phenotypes, course, remission and interventions</dd>
+      <dt>Study design and methods</dt><dd>Review (subtype unconfirmed)</dd>
+      
+      </dl>
+      </article><article class="paper" data-i="184" data-direct-mechanisms="" data-all-mechanisms="" data-legacy-mechanisms="" data-direct-groups="1" data-all-groups="1" data-legacy-groups="1" data-keyword="0" data-archive="1" data-type="journalArticle" hidden>
+      <div class="paper-top"><span class="status ">Direct basis available; awaiting human confirmation</span><span class="muted">Historical / methods archive</span></div>
+      
+      <dl><dt>Mechanism assignment (direct basis)</dt><dd>No direct assignment basis available</dd>
+      <dt>Study design and methods</dt><dd>Review (subtype unconfirmed)</dd>
+      
+      </dl>
+      </article><article class="paper" data-i="185" data-direct-mechanisms="" data-all-mechanisms="11" data-legacy-mechanisms="11" data-direct-groups="1" data-all-groups="1" data-legacy-groups="1" data-keyword="1" data-archive="1" data-type="journalArticle" hidden>
+      <div class="paper-top"><span class="status pending">Needs review (includes keyword-only matches)</span><span class="muted">Historical / methods archive</span></div>
+      
+      <dl><dt>Mechanism assignment (direct basis)</dt><dd>No direct assignment basis available</dd><dt>Mechanism assignment (needs review)</dt><dd>Energy metabolism, mitochondria and redox</dd>
+      <dt>Study design and methods</dt><dd>Review (subtype unconfirmed)</dd>
+      
+      </dl>
+      </article><article class="paper" data-i="186" data-direct-mechanisms="" data-all-mechanisms="3 11" data-legacy-mechanisms="3 11" data-direct-groups="1" data-all-groups="1" data-legacy-groups="1" data-keyword="1" data-archive="1" data-type="journalArticle" hidden>
+      <div class="paper-top"><span class="status pending">Needs review (includes keyword-only matches)</span><span class="muted">Historical / methods archive</span></div>
+      
+      <dl><dt>Mechanism assignment (direct basis)</dt><dd>No direct assignment basis available</dd><dt>Mechanism assignment (needs review)</dt><dd>Environment, stress, nutrition and social conditions; Energy metabolism, mitochondria and redox</dd>
+      <dt>Study design and methods</dt><dd>Review (subtype unconfirmed)</dd>
+      
+      </dl>
+      </article><article class="paper" data-i="187" data-direct-mechanisms="" data-all-mechanisms="" data-legacy-mechanisms="" data-direct-groups="1" data-all-groups="1" data-legacy-groups="1" data-keyword="0" data-archive="1" data-type="journalArticle" hidden>
+      <div class="paper-top"><span class="status ">Direct basis available; awaiting human confirmation</span><span class="muted">Historical / methods archive</span></div>
+      
+      <dl><dt>Mechanism assignment (direct basis)</dt><dd>No direct assignment basis available</dd>
+      <dt>Study design and methods</dt><dd>Review (subtype unconfirmed)</dd>
+      
+      </dl>
+      </article><article class="paper" data-i="188" data-direct-mechanisms="" data-all-mechanisms="9" data-legacy-mechanisms="9" data-direct-groups="1 7" data-all-groups="1 7" data-legacy-groups="1 7" data-keyword="1" data-archive="1" data-type="journalArticle" hidden>
+      <div class="paper-top"><span class="status pending">Needs review (includes keyword-only matches)</span><span class="muted">Historical / methods archive</span></div>
+      
+      <dl><dt>Mechanism assignment (direct basis)</dt><dd>No direct assignment basis available</dd><dt>Mechanism assignment (needs review)</dt><dd>Neurotransmitters, receptors and ion channels</dd>
+      <dt>Study design and methods</dt><dd>Conceptual or theoretical framework; Review (subtype unconfirmed)</dd>
+      
+      </dl>
+      </article><article class="paper" data-i="189" data-direct-mechanisms="" data-all-mechanisms="" data-legacy-mechanisms="" data-direct-groups="1" data-all-groups="1" data-legacy-groups="1" data-keyword="0" data-archive="1" data-type="journalArticle" hidden>
+      <div class="paper-top"><span class="status ">Direct basis available; awaiting human confirmation</span><span class="muted">Historical / methods archive</span></div>
+      
+      <dl><dt>Mechanism assignment (direct basis)</dt><dd>No direct assignment basis available</dd>
+      <dt>Study design and methods</dt><dd>Review (subtype unconfirmed)</dd>
+      
+      </dl>
+      </article><article class="paper" data-i="190" data-direct-mechanisms="" data-all-mechanisms="2 10" data-legacy-mechanisms="2 10" data-direct-groups="1" data-all-groups="1" data-legacy-groups="1" data-keyword="1" data-archive="1" data-type="journalArticle" hidden>
+      <div class="paper-top"><span class="status pending">Needs review (includes keyword-only matches)</span><span class="muted">Historical / methods archive</span></div>
+      
+      <dl><dt>Mechanism assignment (direct basis)</dt><dd>No direct assignment basis available</dd><dt>Mechanism assignment (needs review)</dt><dd>Neurodevelopment, critical periods and synaptic pruning; Synaptic plasticity, networks and EEG</dd>
+      <dt>Study design and methods</dt><dd>Review (subtype unconfirmed)</dd>
+      
+      </dl>
+      </article><article class="paper" data-i="191" data-direct-mechanisms="" data-all-mechanisms="10" data-legacy-mechanisms="10" data-direct-groups="3 4" data-all-groups="3 4" data-legacy-groups="3 4" data-keyword="1" data-archive="1" data-type="journalArticle" hidden>
+      <div class="paper-top"><span class="status pending">Needs review (includes keyword-only matches)</span><span class="muted">Historical / methods archive</span></div>
+      
+      <dl><dt>Mechanism assignment (direct basis)</dt><dd>No direct assignment basis available</dd><dt>Mechanism assignment (needs review)</dt><dd>Synaptic plasticity, networks and EEG</dd>
+      <dt>Study design and methods</dt><dd>Case-control study; Human experiment (randomization unconfirmed)</dd>
+      
+      </dl>
+      </article><article class="paper" data-i="192" data-direct-mechanisms="" data-all-mechanisms="10" data-legacy-mechanisms="10" data-direct-groups="1" data-all-groups="1" data-legacy-groups="1" data-keyword="1" data-archive="1" data-type="journalArticle" hidden>
+      <div class="paper-top"><span class="status pending">Needs review (includes keyword-only matches)</span><span class="muted">Historical / methods archive</span></div>
+      
+      <dl><dt>Mechanism assignment (direct basis)</dt><dd>No direct assignment basis available</dd><dt>Mechanism assignment (needs review)</dt><dd>Synaptic plasticity, networks and EEG</dd>
+      <dt>Study design and methods</dt><dd>Review (subtype unconfirmed)</dd>
+      
+      </dl>
+      </article><article class="paper" data-i="193" data-direct-mechanisms="" data-all-mechanisms="10" data-legacy-mechanisms="10" data-direct-groups="1" data-all-groups="1" data-legacy-groups="1" data-keyword="1" data-archive="1" data-type="journalArticle" hidden>
+      <div class="paper-top"><span class="status pending">Needs review (includes keyword-only matches)</span><span class="muted">Historical / methods archive</span></div>
+      
+      <dl><dt>Mechanism assignment (direct basis)</dt><dd>No direct assignment basis available</dd><dt>Mechanism assignment (needs review)</dt><dd>Synaptic plasticity, networks and EEG</dd>
+      <dt>Study design and methods</dt><dd>Review (subtype unconfirmed)</dd>
+      
+      </dl>
+      </article><article class="paper" data-i="194" data-direct-mechanisms="" data-all-mechanisms="19" data-legacy-mechanisms="19" data-direct-groups="1" data-all-groups="1" data-legacy-groups="1" data-keyword="1" data-archive="1" data-type="journalArticle" hidden>
+      <div class="paper-top"><span class="status pending">Needs review (includes keyword-only matches)</span><span class="muted">Historical / methods archive</span></div>
+      
+      <dl><dt>Mechanism assignment (direct basis)</dt><dd>No direct assignment basis available</dd><dt>Mechanism assignment (needs review)</dt><dd>Measurement methods, biomarkers and competing causal models</dd>
+      <dt>Study design and methods</dt><dd>Review (subtype unconfirmed)</dd>
+      
+      </dl>
+      </article><article class="paper" data-i="195" data-direct-mechanisms="" data-all-mechanisms="" data-legacy-mechanisms="" data-direct-groups="1" data-all-groups="1" data-legacy-groups="1" data-keyword="0" data-archive="1" data-type="journalArticle" hidden>
+      <div class="paper-top"><span class="status ">Direct basis available; awaiting human confirmation</span><span class="muted">Historical / methods archive</span></div>
+      
+      <dl><dt>Mechanism assignment (direct basis)</dt><dd>No direct assignment basis available</dd>
+      <dt>Study design and methods</dt><dd>Review (subtype unconfirmed)</dd>
+      
+      </dl>
+      </article><article class="paper" data-i="196" data-direct-mechanisms="" data-all-mechanisms="19" data-legacy-mechanisms="19" data-direct-groups="1 7" data-all-groups="1 7" data-legacy-groups="1 7" data-keyword="1" data-archive="1" data-type="journalArticle" hidden>
+      <div class="paper-top"><span class="status pending">Needs review (includes keyword-only matches)</span><span class="muted">Historical / methods archive</span></div>
+      
+      <dl><dt>Mechanism assignment (direct basis)</dt><dd>No direct assignment basis available</dd><dt>Mechanism assignment (needs review)</dt><dd>Measurement methods, biomarkers and competing causal models</dd>
+      <dt>Study design and methods</dt><dd>Methodological review</dd>
+      
+      </dl>
+      </article><article class="paper" data-i="197" data-direct-mechanisms="" data-all-mechanisms="" data-legacy-mechanisms="" data-direct-groups="1" data-all-groups="1" data-legacy-groups="1" data-keyword="0" data-archive="1" data-type="journalArticle" hidden>
+      <div class="paper-top"><span class="status ">Direct basis available; awaiting human confirmation</span><span class="muted">Historical / methods archive</span></div>
+      
+      <dl><dt>Mechanism assignment (direct basis)</dt><dd>No direct assignment basis available</dd>
+      <dt>Study design and methods</dt><dd>Review (subtype unconfirmed)</dd>
+      
+      </dl>
+      </article><article class="paper" data-i="198" data-direct-mechanisms="" data-all-mechanisms="19" data-legacy-mechanisms="19" data-direct-groups="1 7" data-all-groups="1 7" data-legacy-groups="1 7" data-keyword="1" data-archive="1" data-type="journalArticle" hidden>
+      <div class="paper-top"><span class="status pending">Needs review (includes keyword-only matches)</span><span class="muted">Historical / methods archive</span></div>
+      
+      <dl><dt>Mechanism assignment (direct basis)</dt><dd>No direct assignment basis available</dd><dt>Mechanism assignment (needs review)</dt><dd>Measurement methods, biomarkers and competing causal models</dd>
+      <dt>Study design and methods</dt><dd>Methodological review</dd>
+      
+      </dl>
+      </article><article class="paper" data-i="199" data-direct-mechanisms="" data-all-mechanisms="4" data-legacy-mechanisms="4" data-direct-groups="1" data-all-groups="1" data-legacy-groups="1" data-keyword="1" data-archive="1" data-type="journalArticle" hidden>
+      <div class="paper-top"><span class="status pending">Needs review (includes keyword-only matches)</span><span class="muted">Historical / methods archive</span></div>
+      
+      <dl><dt>Mechanism assignment (direct basis)</dt><dd>No direct assignment basis available</dd><dt>Mechanism assignment (needs review)</dt><dd>Sleep and circadian regulation</dd>
+      <dt>Study design and methods</dt><dd>Review (subtype unconfirmed)</dd>
+      
+      </dl>
+      </article><article class="paper" data-i="200" data-direct-mechanisms="" data-all-mechanisms="6 12" data-legacy-mechanisms="6 12" data-direct-groups="1" data-all-groups="1" data-legacy-groups="1" data-keyword="1" data-archive="1" data-type="journalArticle" hidden>
+      <div class="paper-top"><span class="status pending">Needs review (includes keyword-only matches)</span><span class="muted">Historical / methods archive</span></div>
+      
+      <dl><dt>Mechanism assignment (direct basis)</dt><dd>No direct assignment basis available</dd><dt>Mechanism assignment (needs review)</dt><dd>Immunity, microglia, astrocytes and kynurenine; Proteostasis, autophagy, lysosomes and neurodegeneration</dd>
+      <dt>Study design and methods</dt><dd>Review (subtype unconfirmed)</dd>
+      
+      </dl>
+      </article><article class="paper" data-i="201" data-direct-mechanisms="" data-all-mechanisms="12 18" data-legacy-mechanisms="12 18" data-direct-groups="1" data-all-groups="1" data-legacy-groups="1" data-keyword="1" data-archive="1" data-type="journalArticle" hidden>
+      <div class="paper-top"><span class="status pending">Needs review (includes keyword-only matches)</span><span class="muted">Historical / methods archive</span></div>
+      
+      <dl><dt>Mechanism assignment (direct basis)</dt><dd>No direct assignment basis available</dd><dt>Mechanism assignment (needs review)</dt><dd>Proteostasis, autophagy, lysosomes and neurodegeneration; Phenotypes, course, remission and interventions</dd>
+      <dt>Study design and methods</dt><dd>Review (subtype unconfirmed)</dd>
+      
+      </dl>
+      </article><article class="paper" data-i="202" data-direct-mechanisms="" data-all-mechanisms="10" data-legacy-mechanisms="10" data-direct-groups="7" data-all-groups="7" data-legacy-groups="7" data-keyword="1" data-archive="1" data-type="book" hidden>
+      <div class="paper-top"><span class="status pending">Needs review (includes keyword-only matches)</span><span class="muted">Historical / methods archive</span></div>
+      
+      <dl><dt>Mechanism assignment (direct basis)</dt><dd>No direct assignment basis available</dd><dt>Mechanism assignment (needs review)</dt><dd>Synaptic plasticity, networks and EEG</dd>
+      <dt>Study design and methods</dt><dd>Book or textbook (no single study design applies)</dd>
+      
+      </dl>
+      </article><article class="paper" data-i="203" data-direct-mechanisms="14" data-all-mechanisms="6 14 19" data-legacy-mechanisms="6 14 19" data-direct-groups="7" data-all-groups="7" data-legacy-groups="7" data-keyword="1" data-archive="0" data-type="webpage" hidden>
+      <div class="paper-top"><span class="status pending">Needs review (includes keyword-only matches)</span><span class="muted">Source cited in current map claims</span></div>
+      
+      <dl><dt>Mechanism assignment (direct basis)</dt><dd>Neurovascular coupling, perfusion and the blood-brain barrier</dd><dt>Mechanism assignment (needs review)</dt><dd>Immunity, microglia, astrocytes and kynurenine; Measurement methods, biomarkers and competing causal models</dd>
+      <dt>Study design and methods</dt><dd>Study protocol or registry record</dd>
+      
+      </dl>
+      </article><article class="paper" data-i="204" data-direct-mechanisms="" data-all-mechanisms="6" data-legacy-mechanisms="6" data-direct-groups="4 5 6 7" data-all-groups="4 5 6 7" data-legacy-groups="4 5 6 7" data-keyword="1" data-archive="0" data-type="journalArticle" hidden>
+      <div class="paper-top"><span class="status pending">Needs review (includes keyword-only matches)</span><span class="muted">Library record outside the map</span></div>
+      
+      <dl><dt>Mechanism assignment (direct basis)</dt><dd>No direct assignment basis available</dd><dt>Mechanism assignment (needs review)</dt><dd>Immunity, microglia, astrocytes and kynurenine</dd>
+      <dt>Study design and methods</dt><dd>Gene expression or transcriptomic analysis; In vitro cell experiment; Machine learning analysis; Mendelian randomization analysis; Secondary analysis of existing data</dd>
+      
+      </dl>
+      </article><article class="paper" data-i="205" data-direct-mechanisms="" data-all-mechanisms="18 19" data-legacy-mechanisms="18 19" data-direct-groups="1" data-all-groups="1" data-legacy-groups="1" data-keyword="1" data-archive="0" data-type="journalArticle" hidden>
+      <div class="paper-top"><span class="status pending">Needs review (includes keyword-only matches)</span><span class="muted">Library record outside the map</span></div>
+      
+      <dl><dt>Mechanism assignment (direct basis)</dt><dd>No direct assignment basis available</dd><dt>Mechanism assignment (needs review)</dt><dd>Phenotypes, course, remission and interventions; Measurement methods, biomarkers and competing causal models</dd>
+      <dt>Study design and methods</dt><dd>Narrative review</dd>
+      
+      </dl>
+      </article><article class="paper" data-i="206" data-direct-mechanisms="" data-all-mechanisms="1 18 19" data-legacy-mechanisms="1 18 19" data-direct-groups="1" data-all-groups="1" data-legacy-groups="1" data-keyword="1" data-archive="0" data-type="journalArticle" hidden>
+      <div class="paper-top"><span class="status pending">Needs review (includes keyword-only matches)</span><span class="muted">Library record outside the map</span></div>
+      
+      <dl><dt>Mechanism assignment (direct basis)</dt><dd>No direct assignment basis available</dd><dt>Mechanism assignment (needs review)</dt><dd>Genetics, epigenetics and gene-environment interaction; Phenotypes, course, remission and interventions; Measurement methods, biomarkers and competing causal models</dd>
+      <dt>Study design and methods</dt><dd>Systematic review</dd>
+      
+      </dl>
+      </article><article class="paper" data-i="207" data-direct-mechanisms="" data-all-mechanisms="6" data-legacy-mechanisms="6" data-direct-groups="4 7" data-all-groups="4 7" data-legacy-groups="4 7" data-keyword="1" data-archive="0" data-type="journalArticle" hidden>
+      <div class="paper-top"><span class="status pending">Needs review (includes keyword-only matches)</span><span class="muted">Library record outside the map</span></div>
+      
+      <dl><dt>Mechanism assignment (direct basis)</dt><dd>No direct assignment basis available</dd><dt>Mechanism assignment (needs review)</dt><dd>Immunity, microglia, astrocytes and kynurenine</dd>
+      <dt>Study design and methods</dt><dd>Gene expression or transcriptomic analysis; Statistical network analysis; Secondary analysis of existing data</dd>
+      
+      </dl>
+      </article><article class="paper" data-i="208" data-direct-mechanisms="" data-all-mechanisms="" data-legacy-mechanisms="" data-direct-groups="1" data-all-groups="1" data-legacy-groups="1" data-keyword="0" data-archive="0" data-type="journalArticle" hidden>
+      <div class="paper-top"><span class="status ">Direct basis available; awaiting human confirmation</span><span class="muted">Library record outside the map</span></div>
+      
+      <dl><dt>Mechanism assignment (direct basis)</dt><dd>No direct assignment basis available</dd>
+      <dt>Study design and methods</dt><dd>Review (subtype unconfirmed)</dd>
+      
+      </dl>
+      </article><article class="paper" data-i="209" data-direct-mechanisms="" data-all-mechanisms="1 6 18" data-legacy-mechanisms="1 6 18" data-direct-groups="4 7" data-all-groups="4 7" data-legacy-groups="4 7" data-keyword="1" data-archive="0" data-type="journalArticle" hidden>
+      <div class="paper-top"><span class="status pending">Needs review (includes keyword-only matches)</span><span class="muted">Library record outside the map</span></div>
+      
+      <dl><dt>Mechanism assignment (direct basis)</dt><dd>No direct assignment basis available</dd><dt>Mechanism assignment (needs review)</dt><dd>Genetics, epigenetics and gene-environment interaction; Immunity, microglia, astrocytes and kynurenine; Phenotypes, course, remission and interventions</dd>
+      <dt>Study design and methods</dt><dd>Genetic association analysis; Statistical network analysis</dd>
+      
+      </dl>
+      </article><article class="paper" data-i="210" data-direct-mechanisms="" data-all-mechanisms="6 10 18" data-legacy-mechanisms="6 10 18" data-direct-groups="1" data-all-groups="1" data-legacy-groups="1" data-keyword="1" data-archive="0" data-type="journalArticle" hidden>
+      <div class="paper-top"><span class="status pending">Needs review (includes keyword-only matches)</span><span class="muted">Library record outside the map</span></div>
+      
+      <dl><dt>Mechanism assignment (direct basis)</dt><dd>No direct assignment basis available</dd><dt>Mechanism assignment (needs review)</dt><dd>Immunity, microglia, astrocytes and kynurenine; Synaptic plasticity, networks and EEG; Phenotypes, course, remission and interventions</dd>
+      <dt>Study design and methods</dt><dd>Review (subtype unconfirmed)</dd>
+      
+      </dl>
+      </article><article class="paper" data-i="211" data-direct-mechanisms="" data-all-mechanisms="1" data-legacy-mechanisms="1" data-direct-groups="1 4 5" data-all-groups="1 4 5" data-legacy-groups="1 4 5" data-keyword="1" data-archive="0" data-type="journalArticle" hidden>
+      <div class="paper-top"><span class="status pending">Needs review (includes keyword-only matches)</span><span class="muted">Library record outside the map</span></div>
+      
+      <dl><dt>Mechanism assignment (direct basis)</dt><dd>No direct assignment basis available</dd><dt>Mechanism assignment (needs review)</dt><dd>Genetics, epigenetics and gene-environment interaction</dd>
+      <dt>Study design and methods</dt><dd>Mendelian randomization analysis; Meta-analysis; Secondary analysis of existing data</dd>
+      
+      </dl>
+      </article><article class="paper" data-i="212" data-direct-mechanisms="" data-all-mechanisms="1" data-legacy-mechanisms="1" data-direct-groups="7" data-all-groups="7" data-legacy-groups="7" data-keyword="1" data-archive="0" data-type="journalArticle" hidden>
+      <div class="paper-top"><span class="status pending">Needs review (includes keyword-only matches)</span><span class="muted">Library record outside the map</span></div>
+      
+      <dl><dt>Mechanism assignment (direct basis)</dt><dd>No direct assignment basis available</dd><dt>Mechanism assignment (needs review)</dt><dd>Genetics, epigenetics and gene-environment interaction</dd>
+      <dt>Study design and methods</dt><dd>Editorial</dd>
+      
+      </dl>
+      </article><article class="paper" data-i="213" data-direct-mechanisms="" data-all-mechanisms="10" data-legacy-mechanisms="10" data-direct-groups="1" data-all-groups="1" data-legacy-groups="1" data-keyword="1" data-archive="0" data-type="journalArticle" hidden>
+      <div class="paper-top"><span class="status pending">Needs review (includes keyword-only matches)</span><span class="muted">Library record outside the map</span></div>
+      
+      <dl><dt>Mechanism assignment (direct basis)</dt><dd>No direct assignment basis available</dd><dt>Mechanism assignment (needs review)</dt><dd>Synaptic plasticity, networks and EEG</dd>
+      <dt>Study design and methods</dt><dd>Review (subtype unconfirmed)</dd>
+      
+      </dl>
+      </article><article class="paper" data-i="214" data-direct-mechanisms="" data-all-mechanisms="18" data-legacy-mechanisms="18" data-direct-groups="1" data-all-groups="1" data-legacy-groups="1" data-keyword="1" data-archive="0" data-type="journalArticle" hidden>
+      <div class="paper-top"><span class="status pending">Needs review (includes keyword-only matches)</span><span class="muted">Library record outside the map</span></div>
+      
+      <dl><dt>Mechanism assignment (direct basis)</dt><dd>No direct assignment basis available</dd><dt>Mechanism assignment (needs review)</dt><dd>Phenotypes, course, remission and interventions</dd>
+      <dt>Study design and methods</dt><dd>Review (subtype unconfirmed)</dd>
+      
+      </dl>
+      </article><article class="paper" data-i="215" data-direct-mechanisms="" data-all-mechanisms="6 18" data-legacy-mechanisms="6 18" data-direct-groups="1" data-all-groups="1" data-legacy-groups="1" data-keyword="1" data-archive="0" data-type="journalArticle" hidden>
+      <div class="paper-top"><span class="status pending">Needs review (includes keyword-only matches)</span><span class="muted">Library record outside the map</span></div>
+      
+      <dl><dt>Mechanism assignment (direct basis)</dt><dd>No direct assignment basis available</dd><dt>Mechanism assignment (needs review)</dt><dd>Immunity, microglia, astrocytes and kynurenine; Phenotypes, course, remission and interventions</dd>
+      <dt>Study design and methods</dt><dd>Review (subtype unconfirmed)</dd>
+      
+      </dl>
+      </article><article class="paper" data-i="216" data-direct-mechanisms="" data-all-mechanisms="5 6" data-legacy-mechanisms="5 6" data-direct-groups="1" data-all-groups="1" data-legacy-groups="1" data-keyword="1" data-archive="0" data-type="journalArticle" hidden>
+      <div class="paper-top"><span class="status pending">Needs review (includes keyword-only matches)</span><span class="muted">Library record outside the map</span></div>
+      
+      <dl><dt>Mechanism assignment (direct basis)</dt><dd>No direct assignment basis available</dd><dt>Mechanism assignment (needs review)</dt><dd>Hypothalamic-pituitary-adrenal axis, receptor sensitivity and feedback; Immunity, microglia, astrocytes and kynurenine</dd>
+      <dt>Study design and methods</dt><dd>Meta-analysis; Systematic review</dd>
+      
+      </dl>
+      </article><article class="paper" data-i="217" data-direct-mechanisms="" data-all-mechanisms="" data-legacy-mechanisms="" data-direct-groups="1" data-all-groups="1" data-legacy-groups="1" data-keyword="0" data-archive="0" data-type="journalArticle" hidden>
+      <div class="paper-top"><span class="status ">Direct basis available; awaiting human confirmation</span><span class="muted">Library record outside the map</span></div>
+      
+      <dl><dt>Mechanism assignment (direct basis)</dt><dd>No direct assignment basis available</dd>
+      <dt>Study design and methods</dt><dd>Narrative review</dd>
+      
+      </dl>
+      </article><article class="paper" data-i="218" data-direct-mechanisms="" data-all-mechanisms="6 18" data-legacy-mechanisms="6 18" data-direct-groups="1" data-all-groups="1" data-legacy-groups="1" data-keyword="1" data-archive="0" data-type="journalArticle" hidden>
+      <div class="paper-top"><span class="status pending">Needs review (includes keyword-only matches)</span><span class="muted">Library record outside the map</span></div>
+      
+      <dl><dt>Mechanism assignment (direct basis)</dt><dd>No direct assignment basis available</dd><dt>Mechanism assignment (needs review)</dt><dd>Immunity, microglia, astrocytes and kynurenine; Phenotypes, course, remission and interventions</dd>
+      <dt>Study design and methods</dt><dd>Review (subtype unconfirmed)</dd>
+      
+      </dl>
+      </article><article class="paper" data-i="219" data-direct-mechanisms="" data-all-mechanisms="19" data-legacy-mechanisms="19" data-direct-groups="1" data-all-groups="1" data-legacy-groups="1" data-keyword="1" data-archive="0" data-type="journalArticle" hidden>
+      <div class="paper-top"><span class="status pending">Needs review (includes keyword-only matches)</span><span class="muted">Library record outside the map</span></div>
+      
+      <dl><dt>Mechanism assignment (direct basis)</dt><dd>No direct assignment basis available</dd><dt>Mechanism assignment (needs review)</dt><dd>Measurement methods, biomarkers and competing causal models</dd>
+      <dt>Study design and methods</dt><dd>Review (subtype unconfirmed)</dd>
+      
+      </dl>
+      </article><article class="paper" data-i="220" data-direct-mechanisms="" data-all-mechanisms="6 18" data-legacy-mechanisms="6 18" data-direct-groups="1" data-all-groups="1" data-legacy-groups="1" data-keyword="1" data-archive="0" data-type="journalArticle" hidden>
+      <div class="paper-top"><span class="status pending">Needs review (includes keyword-only matches)</span><span class="muted">Library record outside the map</span></div>
+      
+      <dl><dt>Mechanism assignment (direct basis)</dt><dd>No direct assignment basis available</dd><dt>Mechanism assignment (needs review)</dt><dd>Immunity, microglia, astrocytes and kynurenine; Phenotypes, course, remission and interventions</dd>
+      <dt>Study design and methods</dt><dd>Review (subtype unconfirmed)</dd>
+      
+      </dl>
+      </article><article class="paper" data-i="221" data-direct-mechanisms="1 4 5 6 9 11 16" data-all-mechanisms="1 4 5 6 9 11 16" data-legacy-mechanisms="1 4 5 6 9 11 16" data-direct-groups="1 7" data-all-groups="1 7" data-legacy-groups="1 7" data-keyword="0" data-archive="0" data-type="journalArticle" hidden>
+      <div class="paper-top"><span class="status ">Direct basis available; awaiting human confirmation</span><span class="muted">Library record outside the map</span></div>
+      
+      <dl><dt>Mechanism assignment (direct basis)</dt><dd>Genetics, epigenetics and gene-environment interaction; Sleep and circadian regulation; Hypothalamic-pituitary-adrenal axis, receptor sensitivity and feedback; Immunity, microglia, astrocytes and kynurenine; Neurotransmitters, receptors and ion channels; Energy metabolism, mitochondria and redox; Microbiome and the gut-brain axis</dd>
+      <dt>Study design and methods</dt><dd>Conceptual or theoretical framework; Narrative review</dd>
+      
+      </dl>
+      </article><article class="paper" data-i="222" data-direct-mechanisms="" data-all-mechanisms="" data-legacy-mechanisms="" data-direct-groups="1" data-all-groups="1" data-legacy-groups="1" data-keyword="0" data-archive="0" data-type="journalArticle" hidden>
+      <div class="paper-top"><span class="status ">Direct basis available; awaiting human confirmation</span><span class="muted">Library record outside the map</span></div>
+      
+      <dl><dt>Mechanism assignment (direct basis)</dt><dd>No direct assignment basis available</dd>
+      <dt>Study design and methods</dt><dd>Review (subtype unconfirmed)</dd>
+      
+      </dl>
+      </article></div>
+</main><footer><p>Source: the final research map dated 30 October 2026 and the existing 141-record dual-axis snapshot. For reading and review only. No reclassification, Zotero changes or data uploads.</p><p>Direct basis still requires human confirmation. It does not establish a mechanism or a formal evidence-quality grade. Original audit data and earlier workbooks are preserved separately.</p></footer>
+<script>
+(() => {
+'use strict';
+const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
+const papers=$$('.paper');const state={page:'overview',mode:'direct',mechanism:0,group:1,cross:false};
+const mechanismName=i=>$('#mechanism-select option[value="'+i+'"]').textContent;
+const methodName=i=>$('#method-select option[value="'+i+'"]').textContent;
+const ids=(p,kind,mode)=>new Set((p.dataset[mode+(kind==='mechanisms'?'Mechanisms':'Groups')]||'').split(' ').filter(Boolean).map(Number));
+function filtered(){const q=$('#search').value.trim().toLowerCase(),type=$('#type-filter').value,status=$('#status-filter').value;
+return papers.filter(p=>(!q||p.textContent.toLowerCase().includes(q))&&(type==='all'||(type==='article')===(p.dataset.type==='journalArticle'))&&(status==='all'||status==='keyword'&&p.dataset.keyword==='1'||status==='archive'&&p.dataset.archive==='1'||status==='direct'&&ids(p,'mechanisms','direct').size>0&&ids(p,'groups','direct').size>0));}
+function matching(pool,m,g,mode){return pool.filter(p=>(!m||ids(p,'mechanisms',mode).has(m))&&(!g||ids(p,'groups',mode).has(g)));}
+function color(n){return n===0?'#F1F0E9':n<=2?'#E1E8DE':n<=5?'#CEDBD1':n<=10?'#B7C9CC':'#B9B1C4';}
+function render(){const pool=filtered();$('#global-count').textContent='Current filters: '+pool.length+' / 141 library records. All classifications remain review previews.';
+$$('.view').forEach(v=>v.hidden=v.id!==state.page);$$('.nav button').forEach(b=>b.classList.toggle('active',b.dataset.page===state.page));$$('[data-mode]').forEach(b=>b.classList.toggle('active',b.dataset.mode===state.mode));
+$('#mode-note').textContent=state.mode==='direct'?'Counts only suggestions with a direct basis for both mechanism and method. Topic-word matching in titles or abstracts, existing keywords and automated full-text term detection require review and are excluded from this scope.':state.mode==='legacy'?'Reproduces the original workbook supported-preview scope cell by cell, then deduplicates original methods into 7 groups. Some original assignments rely only on title terms; these still require review and are never treated as confirmed.':'Shows all candidates in the original data, including low-confidence and keyword-only matches. Counts refer to candidate records, not confirmed assignments.';
+$$('.cell').forEach(b=>{const n=matching(pool,+b.dataset.mechanism,+b.dataset.group,state.mode).length;b.textContent=n;b.style.background=color(n);b.title=mechanismName(+b.dataset.mechanism)+' × '+methodName(+b.dataset.group)+': '+n+' records';});
+const coverage=$('#coverage-list');coverage.replaceChildren();
+for(let m=1;m<=19;m++){const low=[];for(let g=1;g<=7;g++){const n=matching(pool,m,g,'direct').length;if(n<=1)low.push(methodName(g)+' '+n+' records');}if(low.length){const li=document.createElement('li');li.textContent=mechanismName(m)+': '+low.join('; ');coverage.append(li);}}
+$('#paper-results').hidden=!['mechanism','method'].includes(state.page);let selected=[];
+if(state.page==='mechanism'){$('#mechanism-select').value=state.mechanism;$('#mechanism-title').textContent=state.mechanism?mechanismName(state.mechanism):'All library records';$('#mechanism-context').textContent='Retains both direct-basis assignments and term-matched candidates.';selected=matching(pool,state.mechanism,state.cross?state.group:0,$('#include-candidates').checked?'all':state.mode);}
+if(state.page==='method'){$('#method-select').value=state.group;$('#method-title').textContent=methodName(state.group);$('#method-context').textContent=$('.method-definition[data-group="'+state.group+'"] p').textContent+' The distribution uses the overview scope: '+(state.mode==='direct'?'Direct basis':state.mode==='legacy'?'Original workbook scope':'All candidates')+'. The paper list below may also include assignments needing review, so counts may differ.';selected=matching(pool,0,state.group,$('#include-candidates').checked?'all':state.mode);const box=$('#method-distribution');box.replaceChildren();for(let m=1;m<=19;m++){const b=document.createElement('button'),n=matching(pool,m,state.group,state.mode).length;const text=document.createElement('span');text.textContent=mechanismName(m);const count=document.createElement('b');count.textContent=n;b.append(text,count);b.onclick=()=>openMechanism(m,state.group,true);box.append(b);}}
+$('#cross-context').hidden=!(state.page==='mechanism'&&state.cross);if(state.cross)$('#cross-context').textContent='Cross-filter: '+mechanismName(state.mechanism)+' × '+methodName(state.group)+'. Disable candidates below to match the current heatmap counting scope.';
+const list=$('#paper-list');list.replaceChildren();papers.forEach(p=>p.hidden=true);selected.forEach(p=>{p.hidden=false;list.append(p);});$('#detail-count').textContent='Showing '+selected.length+' records';$('#empty').hidden=selected.length!==0;
+}
+function openMechanism(m,g=0,cross=false){state.page='mechanism';state.mechanism=m;state.group=g||state.group;state.cross=cross;$('#include-candidates').checked=!cross;render();window.scrollTo({top:0,behavior:'smooth'});}
+$$('[data-page]').forEach(b=>b.addEventListener('click',()=>{state.page=b.dataset.page;state.cross=false;$('#include-candidates').checked=true;render();}));
+$$('[data-mode]').forEach(b=>b.onclick=()=>{state.mode=b.dataset.mode;render();});
+$$('.mechanism-head').forEach(b=>b.onclick=()=>openMechanism(+b.dataset.mechanism));
+$$('.method-head').forEach(b=>b.onclick=()=>{state.page='method';state.group=+b.dataset.group;state.cross=false;$('#include-candidates').checked=true;render();window.scrollTo({top:0,behavior:'smooth'});});
+$$('.cell').forEach(b=>b.onclick=()=>openMechanism(+b.dataset.mechanism,+b.dataset.group,true));
+$('#mechanism-select').onchange=e=>{state.mechanism=+e.target.value;state.cross=false;render();};$('#method-select').onchange=e=>{state.group=+e.target.value;render();};
+['#search','#type-filter','#status-filter','#include-candidates'].forEach(s=>$(s).addEventListener(s==='#search'?'input':'change',render));
+$('#all-papers').onclick=()=>openMechanism(0);render();
+})();
+</script></body></html>
